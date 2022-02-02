@@ -1,19 +1,18 @@
 import Home from "./pages/Home";
-import { createGlobalStyle } from "styled-components";
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./GlobalStyles";
 
-const GlobalStyle = createGlobalStyle`
-	*, *::after, *::before {
-		margin: 0;
-		box-sizing: border-box;
-	}
-`;
+const theme = {
+	text: "#EFEFEF",
+	primary: "#9226FF",
+};
 
 function App() {
 	return (
-		<>
+		<ThemeProvider theme={theme}>
 			<GlobalStyle />
 			<Home />
-		</>
+		</ThemeProvider>
 	);
 }
 
