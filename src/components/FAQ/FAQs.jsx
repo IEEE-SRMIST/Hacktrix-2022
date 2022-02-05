@@ -1,9 +1,21 @@
 import React from 'react';
 import styled from "styled-components";
+import FaqTop from "../../assets/images/faq-top-doodle-bg.png"
+import FaqBottom from "../../assets/images/faq-bottom-doodle-bg.png"
 
 const FaqWrapper=styled.div`
              background-color: #040309;
              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+             background-position: 0 0, 100% 100%;
+             background-image: url(${FaqTop}), url(${FaqBottom});
+             background-repeat: no-repeat;
+             background-size: 540px;
+
+             @media(max-width:768px){
+                 background-size: 280px, 200px;
+             }
+
+
 `
 
 const FaqCont = styled.div`
@@ -39,7 +51,6 @@ const Accordion = styled.div`
     width: 100%;
     button{
         color: #D898FF;
-        font-size: 1.1rem;
         background-color: transparent;
         border: none;
         font-family: Gothic A1;
@@ -49,9 +60,18 @@ const Accordion = styled.div`
         line-height: 28px;
         letter-spacing: 0.1em;
         padding: 0.5rem;
+        @media(max-width:768px){
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
+
     button::after{
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        @media (max-width:768px){
+            padding: 1.5rem 1 1.5rem 1;
+        }
+        
     }
     button:not(.collapsed){
         color: white;
@@ -68,17 +88,13 @@ const Accordion = styled.div`
         outline: 0;
         box-shadow: 0 0 0 0 rgba(252, 121, 241, 0.25);       
     }
-    .accordion-body{
-        text-align: left;
-        font-family: Gothic A1;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 40px;
-        letter-spacing: 0.1em; 
-    }
     svg{
         margin-right: 1.5rem;
+        @media(max-width:768px){
+            margin-right: 0.2rem;
+            height: 32px;
+            width: 32px;
+        }
     }
 `
 const AccordItem = styled.div`
@@ -90,7 +106,7 @@ const AccordItem = styled.div`
     border-radius: 20px;
     font-family: Gothic A1;
     font-style: normal;
-    padding: 0.1rem;   
+    padding: 0.2rem;   
 `
 
 
@@ -103,6 +119,10 @@ const AccordBody = styled.div`
     line-height: 40px;
     letter-spacing: 0.1em;
     padding: 1rem;
+    @media(max-width:768px){
+        font-size: 18px;
+        line-height: 24px;
+    }
 `
 
 
