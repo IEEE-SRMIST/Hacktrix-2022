@@ -7,6 +7,7 @@ import Fibonalabs from '../../assets/sponsor-logos/General/Fibonalabs.png';
 import Hack_Club from '../../assets/sponsor-logos/General/Hack_Club.png';
 import MSLA from '../../assets/sponsor-logos/General/MSLA.png';
 import Wolfram from '../../assets/sponsor-logos/General/wolfram.png';
+import BackG from '../../assets/sponsor-logos/Backdrop.png';
 
 // copied
 const Logos = styled.img`
@@ -122,10 +123,21 @@ const Heading = styled.h2`
   justify-content: center;
   margin: 20px 0;
 `;
+
 const Sponsors = () => {
   return (
-    <div>
-      <Heading>Platinum Sponsors</Heading>
+    <div
+      style={{
+        backgroundImage: `url(${BackG})`,
+        height: '100%',
+        width: '100%',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover',
+      }}
+    >
+      <Heading style={{ paddingTop: '10px' }}>Platinum Sponsors</Heading>
       <Wrapper>
         <a href="https://devfolio.co/" target="_blank" rel="noreferrer">
           <Logos src={Devfolio} />
