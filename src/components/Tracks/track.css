@@ -1,0 +1,72 @@
+.track {
+  background: url("../../assets/img/overlay.png");
+  background-repeat: repeat;
+}
+
+.track .container {
+  border-top: 1px solid rgba(0, 255, 0, 0.2);
+  padding: 80px;
+}
+
+.track-title {
+  text-align: center;
+  font-size: 35px;
+  color: rgba(0, 255, 0, 0.95);
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.tracks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.track-img {
+  margin: 25px 0;
+}
+
+.item-title {
+  min-height: 65px;
+}
+
+.tracks-title {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: rgba(0, 255, 50, 0.75);
+}
+
+.track-content {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .track-title {
+    margin-bottom: 10px;
+  }
+
+  .tracks {
+    padding-top: 40px;
+  }
+
+  .track-img {
+    margin: 15px 0;
+  }
+
+  .item-title {
+    min-height: 0px;
+  }
+}
+
+@media (max-width: 360px) {
+  .track .container {
+    padding: 30px;
+  }
+
+  .tracks-title {
+    font-size: 24px;
+  }
+}
