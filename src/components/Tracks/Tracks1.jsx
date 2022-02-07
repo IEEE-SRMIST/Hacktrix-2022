@@ -1,12 +1,11 @@
 import React from "react";
 import "./track.css";
-
-const imageURL = "./img/icons";
+import Slide from "react-reveal/Slide";
 
 const Tracks = () => {
   const track_list = [
     {
-      src: `${imageURL}/healthcare.svg`,
+      src: "./img/icons/healthcare.svg",
       title: "Healthcare",
       content:
         "Usher the world of medicine and healthcare forward with curious and inspired solutions.",
@@ -48,9 +47,9 @@ const Tracks = () => {
     },
     {
       src: "./img/icons/open.svg",
-      title: "Matrix (open track)",
+      title: "The Matrix",
       content:
-        "Let loose your imagination come up with a unique solution to make the world a better place.",
+        "In this Open Track, Let loose your imagination and come up with a unique solution to make the world a better place.",
     },
   ];
 
@@ -60,19 +59,25 @@ const Tracks = () => {
         <div className="track-title">Tracks</div>
         <div className="tracks">
           <div className="row justify-content-evenly w-100">
-            {track_list.slice(0, 3).map((item, index) => {
+            {track_list.map((item, index) => {
               return (
                 <div
                   key={index}
                   className="col-20 col-md-4 col-lg-4 text-center px-3 py-1"
                 >
                   <div className="track-item">
-                    <img
-                      alt="some"
-                      src={item.src}
-                      className="track-img"
-                      width="90"
-                    />
+                    <div className="parent">
+                      <img
+                        alt="HackTrix"
+                        src={item.src}
+                        className="track-img"
+                      />
+                      <img
+                        alt="HackTrixFrame"
+                        src="./frame.svg"
+                        className="frame-img"
+                      />
+                    </div>
                     <div className="item-title">
                       <h2 className="tracks-title">{item.title}</h2>
                     </div>

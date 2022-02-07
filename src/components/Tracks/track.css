@@ -1,19 +1,25 @@
-.track {
-  background: url("../../assets/img/overlay.png");
-  background-repeat: repeat;
+.container {
+  background: #040309;
+}
+
+.glow {
+  color: #fff;
 }
 
 .track .container {
   border-top: 1px solid rgba(0, 255, 0, 0.2);
-  padding: 80px;
+  padding: 20px;
 }
 
 .track-title {
   text-align: center;
-  font-size: 35px;
-  color: rgba(0, 255, 0, 0.95);
-  margin-bottom: 30px;
+  font-size: 65px;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 130px;
+  margin-top: 100px;
   font-weight: 800;
+  text-decoration-color: 2px solid #deb7f5;
+  text-shadow: 0px 0px 50px #b741ff;
 }
 
 .tracks {
@@ -25,27 +31,51 @@
   padding-top: 50px;
 }
 
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .track-img {
-  margin: 25px 0;
+  height: 80px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid #000000;
+}
+
+.frame-img {
+  position: absolute;
+  width: 350px;
+  top: -170px;
+  left: 35px;
+  border: 1px solid #000000;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .item-title {
   min-height: 65px;
+  min-width: 150px;
+  margin-top: 200px;
 }
 
 .tracks-title {
-  font-size: 14px;
+  font-size: 34px;
+  margin-top: 30px;
   margin-bottom: 15px;
-  color: rgba(0, 255, 50, 0.75);
+  color: rgba(216, 152, 255, 1);
 }
 
 .track-content {
   font-size: 1.1rem;
+  margin-bottom: 120px;
 }
 
 @media (max-width: 768px) {
   .track-title {
-    margin-bottom: 10px;
+    margin-bottom: 70px;
   }
 
   .tracks {
@@ -68,5 +98,8 @@
 
   .tracks-title {
     font-size: 24px;
+  }
+  .item-title {
+    margin-top: 50px;
   }
 }
