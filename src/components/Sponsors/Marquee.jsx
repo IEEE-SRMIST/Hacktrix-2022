@@ -8,7 +8,9 @@ import styled from 'styled-components';
 const MarqueeWrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 25px;
+  /* margin-top: 25px; */
+  margin: 25px auto 0 auto;
+  width: 70%;
 `;
 const ImageTag = styled.img`
   height: 100px;
