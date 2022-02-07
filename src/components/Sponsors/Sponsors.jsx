@@ -1,13 +1,13 @@
-import React from 'react';
-import MarqueeR from './Marquee';
-import styled from 'styled-components';
-import Den from '../../assets/sponsor-logos/General/den.png';
-import Devfolio from '../../assets/sponsor-logos/General/devfolio.png';
-import Fibonalabs from '../../assets/sponsor-logos/General/Fibonalabs.png';
-import Hack_Club from '../../assets/sponsor-logos/General/Hack_Club.png';
-import MSLA from '../../assets/sponsor-logos/General/MSLA.png';
-import Wolfram from '../../assets/sponsor-logos/General/wolfram.png';
-import BackG from '../../assets/sponsor-logos/Backdrop.png';
+import React from "react";
+import MarqueeR from "./Marquee";
+import styled from "styled-components";
+import Den from "../../assets/sponsor-logos/General/den.png";
+import Devfolio from "../../assets/sponsor-logos/General/devfolio.png";
+import Fibonalabs from "../../assets/sponsor-logos/General/Fibonalabs.png";
+import Hack_Club from "../../assets/sponsor-logos/General/Hack_Club.png";
+import MSLA from "../../assets/sponsor-logos/General/MSLA.png";
+import Wolfram from "../../assets/sponsor-logos/General/wolfram.png";
+import BackG from "../../assets/sponsor-logos/Backdrop.png";
 
 // copied
 const Logos = styled.img`
@@ -70,14 +70,14 @@ const GlowWrapper = styled.main`
 const Sponbutton = styled.button`
   margin-top: 50px;
 
-  --glow-color: rgb(217, 176, 255);
-  --glow-spread-color: rgba(191, 123, 255, 0.781);
-  --enhanced-glow-color: rgb(231, 206, 255);
+  --glow-color: rgb(230, 204, 255);
+
   --btn-color: rgb(100, 61, 136);
   border: 0.25em solid var(--glow-color);
   padding: 1em 3em;
   color: var(--glow-color);
-  font-size: 15px;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 25px;
   font-weight: bold;
   background-color: var(--btn-color);
   border-radius: 1em;
@@ -91,7 +91,7 @@ const Sponbutton = styled.button`
 
   &::after {
     pointer-events: none;
-    content: '';
+    content: "";
     position: absolute;
     top: 120%;
     left: 0;
@@ -124,20 +124,23 @@ const Heading = styled.h2`
   margin: 20px 0;
 `;
 
+const SponserText = styled.p`
+  font-family: "Gothic A1", sans-serif;
+`;
 const Sponsors = () => {
   return (
     <div
       style={{
         backgroundImage: `url(${BackG})`,
-        height: '100%',
-        width: '100%',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        backgroundSize: 'cover',
+        height: "100%",
+        width: "100%",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
       }}
     >
-      <Heading style={{ paddingTop: '10px' }}>Platinum Sponsors</Heading>
+      <Heading style={{ paddingTop: "200px" }}>Platinum Sponsors</Heading>
       <Wrapper>
         <a href="https://devfolio.co/" target="_blank" rel="noreferrer">
           <Logos src={Devfolio} />
@@ -151,7 +154,7 @@ const Sponsors = () => {
         </a>
       </Wrapper>
       <MarqueeR />
-      <Heading>Community Sponsor</Heading>
+      <Heading style={{ paddingTop: "100px" }}>Community Sponsor</Heading>
       <Wrapper>
         <a
           href="https://studentambassadors.microsoft.com/"
@@ -162,7 +165,7 @@ const Sponsors = () => {
         </a>
       </Wrapper>
 
-      <Heading>Internship Partner</Heading>
+      <Heading style={{ paddingTop: "100px" }}>Internship Partner</Heading>
       <Wrapper>
         <a
           href="https://www.fibonalabs.com/index.html"
@@ -173,14 +176,14 @@ const Sponsors = () => {
         </a>
       </Wrapper>
 
-      <Heading>Goodies Sponsor</Heading>
+      <Heading style={{ paddingTop: "100px" }}>Goodies Sponsor</Heading>
       <Wrapper>
         <a href="https://hackclub.com/brand/" target="_blank" rel="noreferrer">
           <Logos src={Hack_Club} />
         </a>
       </Wrapper>
 
-      <Heading>Domain Sponsor</Heading>
+      <Heading style={{ paddingTop: "100px" }}>Domain Sponsor</Heading>
       <Wrapper>
         <a href="https://www.dennetworks.com/" target="_blank" rel="noreferrer">
           <Logos src={Den} />
@@ -188,8 +191,10 @@ const Sponsors = () => {
       </Wrapper>
       <GlowWrapper>
         <a href="mailto:ieee@srmist.edu.in" target="_blank" rel="noreferrer">
-          {' '}
-          <Sponbutton>Sponsor Us</Sponbutton>
+          {" "}
+          <Sponbutton>
+            <SponserText className="sponserText">Sponsor Us</SponserText>
+          </Sponbutton>
         </a>
       </GlowWrapper>
     </div>

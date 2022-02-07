@@ -1,9 +1,9 @@
-import React from 'react';
-import Marquee from 'react-fast-marquee';
-import GoldData from './Golddata';
-import SilverData from './Silverdata';
-import BronzeData from './Bronzedata';
-import styled from 'styled-components';
+import React from "react";
+import Marquee from "react-fast-marquee";
+import GoldData from "./Golddata";
+import SilverData from "./Silverdata";
+import BronzeData from "./Bronzedata";
+import styled from "styled-components";
 
 const MarqueeWrapper = styled.section`
   display: flex;
@@ -32,7 +32,7 @@ const MarqueeR = () => {
   return (
     <>
       {/* gold sponsors */}
-      <Heading>Gold Sponsors</Heading>
+      <Heading style={{ paddingTop: "100px" }}>Gold Sponsors</Heading>
       <MarqueeWrapper>
         <Marquee speed="90" pauseOnHover={true} gradient={false}>
           <div>
@@ -52,7 +52,7 @@ const MarqueeR = () => {
         </Marquee>
       </MarqueeWrapper>
       {/* silver marquee */}
-      <Heading>Silver Sponsors</Heading>
+      <Heading style={{ paddingTop: "100px" }}>Silver Sponsors</Heading>
       <MarqueeWrapper>
         <Marquee speed="90" pauseOnHover={true} gradient={false}>
           <div>
@@ -67,7 +67,7 @@ const MarqueeR = () => {
         </Marquee>
       </MarqueeWrapper>
       {/* Bronze sponsors */}
-      <Heading>Bronze Sponsors</Heading>
+      <Heading style={{ paddingTop: "100px" }}>Bronze Sponsors</Heading>
       <MarqueeWrapper>
         <Marquee speed="90" pauseOnHover={true} gradient={false}>
           <div>
