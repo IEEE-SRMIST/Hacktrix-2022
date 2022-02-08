@@ -1,7 +1,7 @@
 import React from "react";
 import Landing from "../components/Home/Landing";
-import Tracks1 from "../components/Tracks/Tracks1";
-import Tracks2 from "../components/Tracks/Tracks2";
+import Tracks from "../components/Tracks/Tracks";
+
 import styled from "styled-components";
 
 const HomeWrapper = styled.main`
@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <HomeWrapper>
       {/* <Landing /> */}
-      <Tracks1 />
+      <Tracks />
     </HomeWrapper>
   );
 };
