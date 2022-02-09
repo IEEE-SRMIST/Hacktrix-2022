@@ -12,14 +12,14 @@ const HomeWrapper = styled.main`
 `;
 
 const Home = () => {
-  return (
-    <HomeWrapper>
-      <Landing />
-      <Judges />
-      <Speaker />
-      <Mentor />
-    </HomeWrapper>
-  );
+	return (
+		<HomeWrapper>
+			<Landing />
+			<Judges />
+			<Speaker />
+			<Mentor />
+		</HomeWrapper>
+	);
 };
 
 export default Home;

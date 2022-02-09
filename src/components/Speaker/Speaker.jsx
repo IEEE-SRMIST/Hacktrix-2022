@@ -3,7 +3,6 @@ import React from "react";
 import "../Speaker/speaker.css";
 import styled from "styled-components";
 
-
 const SPEAKER = [
   {
     name: "Steve Wozniak",
@@ -64,16 +63,15 @@ const SPEAKER = [
 ];
 
 const Heading = styled.h2`
-text-align: center;
-font-size: 65px;
-color: rgba(255, 255, 255, 0.95);
-margin-bottom: 50px;
-margin-top: 20px;
-font-weight: 800;
-text-decoration-color: 2px solid #deb7f5;
-text-shadow: 0px 0px 50px #b741ff;
+  text-align: center;
+  font-size: 65px;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-weight: 800;
+  text-decoration-color: 2px solid #deb7f5;
+  text-shadow: 0px 0px 50px #b741ff;
 `;
-
 
 const Mentor = () => {
   return (
