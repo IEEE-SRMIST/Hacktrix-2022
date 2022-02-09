@@ -124,10 +124,10 @@ const Prizetext = styled.div`
 const PrizeWrapper = styled.main`
   /* background: #671267; */
   /* background: url({BG}); */
-  width: 100%;
+  width: 60%;
   height: 100%;
-  margin: 5% 0;
-  padding: 10% 0;
+  margin: 5px auto;
+  padding: 30px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* grid-auto-rows: minmax(100px, auto);
@@ -169,13 +169,16 @@ const Goldholder = styled.div`
 `;
 const Heading = styled.h2`
   text-align: center;
-  padding-top: '20px';
+  padding-top: 10px;
+  color: #9a2ed1;
+  text-shadow: 0px 0px 12px #9226ff;
 `;
 export default function Prizes() {
   return (
     <>
-      <Heading> Prizes</Heading>
+      <Heading>Prizes</Heading>
       <PrizeWrapper>
+        {/* the purple circle */}
         <Holder>
           <img src={polypurple} />
           <Ellipse1>
@@ -186,6 +189,7 @@ export default function Prizes() {
           </Ellipse1>
           <Prizetext>1st Runner Up</Prizetext>
         </Holder>
+        {/* gold circle */}
         <Goldholder>
           <img src={polygold} />
           <Ellipse2>
@@ -196,6 +200,7 @@ export default function Prizes() {
           </Ellipse2>
           <Prizetext>Winner</Prizetext>
         </Goldholder>
+        {/* blue circle */}
         <Holder>
           <img src={polyblue} />
           <Ellipse3>
