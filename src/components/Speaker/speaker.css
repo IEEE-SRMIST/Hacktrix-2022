@@ -1,10 +1,9 @@
-.myStyle{
-  background: url('../../assets/overlay.png');
-  font-size:'50px';
+.myStyle {
+  background: url("../../assets/overlay.png");
+  font-size: "50px";
   height: "100%";
   background-size: "cover";
-  background-repeat: no-repeat
-  
+  background-repeat: no-repeat;
 }
 
 .speaker_div {
