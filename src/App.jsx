@@ -5,7 +5,7 @@ import GlobalStyle from "./GlobalStyles";
 const theme = {
 	text: "#EFEFEF",
 	primary: "#9226FF",
-};
+}
 
 function App() {
 	return (

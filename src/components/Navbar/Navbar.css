@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.parentDiv {
+  position: absolute;
+  width: 100%;
+  color: white;
+}
+
+.nav {
+  text-align: center;
+  font-family: "Franklin Gothic Medium";
+}
+.nav-link {
+  text-decoration: none;
+  color: #d898ff;
+}
+
+ul li {
+  display: inline-block;
+  padding: 20px 25px;
+}

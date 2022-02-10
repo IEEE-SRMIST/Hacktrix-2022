@@ -1,0 +1,15 @@
+.Name {
+  position: absolute;
+  text-align: center;
+  width: 761px;
+  height: 110px;
+  left: 580px;
+  top: 304px;
+
+  font-family: Bios;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 110px;
+  letter-spacing: 0.3em;
+}
