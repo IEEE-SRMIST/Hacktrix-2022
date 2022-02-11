@@ -8,7 +8,7 @@ const Schedule = ()=>{
 
             <Styled.TopDesign />
             <Styled.BottomDegign />
-            <Styled.Wrapper>
+             <Styled.Wrapper>
                 <Styled.Heading>timeline</Styled.Heading>
 
                 <Styled.Item justifyContent="right">
