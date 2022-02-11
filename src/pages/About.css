@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dongle&family=Fruktur&family=Gothic+A1:wght@300&family=Libre+Baskerville:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,500&family=Nunito:wght@300;400&family=Poppins:wght@500&family=Secular+One&display=swap');
+
+.body{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+    background-image: url('/public/bg.svg');
+  }
+  
+  .about .container{
+    /* border-top: 1px solid red; */
+    padding: 80px;
+  }
+  
+  .about-title{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-img{
+    width: 18%;
+    position: relative;
+    top: -6px;
+    margin-left: 10px;
+    display: flex;
+  }
+  
+  .about-img img{
+    width: 100%;
+  }
+
+  .about-content{
+    font-family: 'Gothic A1', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin: 0 45px;
+  }
+
+  .about-img::before{
+    content: "\201C";
+    color: white;
+    font-size: 28px;
+  }
+
+  .about-img::after{
+    content: "\201D";
+    color: white;
+    font-size: 28px;
+  }
+  
+  .about2 .about-content{
+      bottom: 10px;
+      text-align: center;
+      font-weight: 16px;
+      justify-content: center;
+      margin: 0 95px;
+  }
+
+  @media(max-width:768px){
+    .about-title{
+      flex-direction: column;
+    }
+
+    .about .container{
+      padding: 40px;
+    }
+
+    .about-img {
+      width: 30%;
+      position: relative;
+      top: 0px;
+      margin-left: 0px;
+      display: flex;
+    }
+
+    .about-img img{
+      width: 85%;
+    }
+
+    .about-content{
+      text-align: center;
+    }
+  }
+
+  @media(max-width:360px){
+    .about .container{
+      padding: 30px;
+    }
+    .about-img{
+      width: 70%;
+    }
+    .about-content{
+      font-size: 12px;
+    }
+  }
