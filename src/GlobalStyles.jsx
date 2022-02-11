@@ -41,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Bios', sans-serif;
     font-weight: bold;
 	}
+	overflow-x:hidden;
 `;
 
 export default GlobalStyle;
