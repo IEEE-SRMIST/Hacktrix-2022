@@ -25,18 +25,7 @@ const Logos = styled.img`
   margin-right: 20px;
   margin-top: 15px;
 `;
-// const Title = styled.h1`
-//   text-align: center;
-//   color: white;
-//   font-size: 35px;
-//   font-style: normal;
-//   font-weight: 400;
-//   /* line-height: 48px; */
-//   /* letter-spacing: 0.3em; */
-//   @media (max-width: 768px) {
-//     font-size: 22px;
-//   }
-// `;
+
 const Wrapper = styled.main`
   width: 100%;
   margin: auto;
@@ -68,13 +57,13 @@ const GlowWrapper = styled.main`
   }
 `;
 const Sponbutton = styled.button`
-  margin-top: 50px;
+  margin-top: 20px;
 
   --glow-color: rgb(230, 204, 255);
 
   --btn-color: rgb(100, 61, 136);
   border: 0.25em solid var(--glow-color);
-  padding: 1em 3em;
+  padding: 1em 2em;
   color: var(--glow-color);
   font-family: "Gothic A1", sans-serif;
   font-size: 25px;
@@ -101,14 +90,6 @@ const Sponbutton = styled.button`
     filter: blur(2em);
     opacity: 0.7;
     transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
-  }
-
-  &:hover {
-    color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em 0.25em var(--glow-color),
-      0 0 4em 2em var(--glow-spread-color),
-      inset 0 0 0.75em 0.25em var(--glow-color);
   }
 
   &:active {

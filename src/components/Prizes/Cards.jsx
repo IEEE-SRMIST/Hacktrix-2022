@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import BG from '../../assets/img/BG.png';
+import React from "react";
+import styled from "styled-components";
+import BG from "../../assets/img/BG.png";
 const CardBox = styled.div`
   width: 100%;
   height: 100%;
@@ -39,7 +39,7 @@ const TextHolder = styled.p`
 const Heading = styled.h2`
   text-align: center;
 
-  color: #9a2ed1;
+  color: #ffffff;
   text-shadow: 0px 0px 12px #9226ff;
 `;
 const Cards = () => {
@@ -47,11 +47,11 @@ const Cards = () => {
     <>
       <section
         style={{
-          paddingTop: '20px',
-          marginTop: '0px',
+          paddingTop: "20px",
+          marginTop: "0px",
           backgroundImage: `url(${BG})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
         }}
       >
         <Heading>Winner Prizes</Heading>
@@ -80,8 +80,8 @@ const Cards = () => {
       <section
         style={{
           backgroundImage: `url(${BG})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
         }}
       >
         <Heading>Participation Prizes</Heading>

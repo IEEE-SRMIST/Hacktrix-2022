@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import polyblue from '../../assets/img/polyblue.png';
-import polygold from '../../assets/img/polygold.png';
-import polypurple from '../../assets/img/polypurple.png';
-import BG from '../../assets/img/BG.png';
+import React from "react";
+import styled from "styled-components";
+import polyblue from "../../assets/img/polyblue.png";
+import polygold from "../../assets/img/polygold.png";
+import polypurple from "../../assets/img/polypurple.png";
+import BG from "../../assets/img/BG.png";
 
 const Ellipse3 = styled.div`
   /* blue */
@@ -114,11 +114,11 @@ const Ellipse1 = styled.div`
 `;
 const Prizetext = styled.div`
   display: flex;
-  margin: 85px;
+  margin: 80px;
   /* z-index: 9; */
-  color: white;
+  color: #ffffff;
   @media (max-width: 768px) {
-    font-size: 10px;
+    font-size: 20px;
   }
 `;
 const PrizeWrapper = styled.main`
@@ -170,7 +170,7 @@ const Goldholder = styled.div`
 const Heading = styled.h2`
   text-align: center;
   padding-top: 10px;
-  color: #9a2ed1;
+  color: #ffffff;
   text-shadow: 0px 0px 12px #9226ff;
 `;
 export default function Prizes() {
@@ -187,7 +187,7 @@ export default function Prizes() {
               <Prizetext>2</Prizetext>
             </EllipseP>
           </Ellipse1>
-          <Prizetext>1st Runner Up</Prizetext>
+          <Prizetext />
         </Holder>
         {/* gold circle */}
         <Goldholder>
@@ -198,7 +198,7 @@ export default function Prizes() {
               <Prizetext>1</Prizetext>
             </EllipseG>
           </Ellipse2>
-          <Prizetext>Winner</Prizetext>
+          <Prizetext />
         </Goldholder>
         {/* blue circle */}
         <Holder>
@@ -209,7 +209,7 @@ export default function Prizes() {
               <Prizetext>3</Prizetext>
             </EllipseB>
           </Ellipse3>
-          <Prizetext>2nd Runner Up</Prizetext>
+          <Prizetext />
         </Holder>
       </PrizeWrapper>
     </>
