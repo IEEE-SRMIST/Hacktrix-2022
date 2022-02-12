@@ -1,61 +1,60 @@
 import React from "react";
 
-import "../Judges/judges.css";
+import "../Mentor/mentor.css";
 import styled from "styled-components";
-import bg from "../../assets/overlay.png";
 
 const MENTOR = [
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
     link: "https://www.linkedin.com/in/alongrinshpoon/",
   },
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
     link: "https://www.linkedin.com/in/alongrinshpoon/",
   },
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
     link: "https://www.linkedin.com/in/alongrinshpoon/",
   },
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
     link: "https://www.linkedin.com/in/alongrinshpoon/",
   },
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
     link: "https://www.linkedin.com/in/alongrinshpoon/",
   },
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
     link: "https://www.linkedin.com/in/alongrinshpoon/",
   },
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
     link: "https://www.linkedin.com/in/alongrinshpoon/",
   },
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
@@ -73,17 +72,10 @@ const Heading = styled.h2`
   text-decoration-color: 2px solid #deb7f5;
   text-shadow: 0px 0px 50px #b741ff;
 `;
-const myStyle = {
-  backgroundImage: `url(${bg})`,
-  height: "100%",
-  fontSize: "50px",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-};
 
 const Mentor = () => {
   return (
-    <div style={myStyle}>
+    <div class="myStyle">
       <Heading>Mentor</Heading>
       <div className="row py-5 gx-0 justify-content-center">
         {MENTOR.map((item, index) => {

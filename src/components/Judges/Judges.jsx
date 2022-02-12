@@ -2,25 +2,59 @@ import React from "react";
 
 import "../Judges/judges.css";
 import styled from "styled-components";
-import bg from "../../assets/overlay.png";
 
 const JUDGES = [
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
     link: "https://www.linkedin.com/in/alongrinshpoon/",
   },
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
     link: "https://www.linkedin.com/in/alongrinshpoon/",
   },
   {
-    name: "Cool Guy",
+    name: "Steve Wozniak",
+    image: "./img/speaker/judge1.svg",
+    designation: "CEO",
+    company: "echoAR",
+    link: "https://www.linkedin.com/in/alongrinshpoon/",
+  },
+  {
+    name: "Steve Wozniak",
+    image: "./img/speaker/judge1.svg",
+    designation: "CEO",
+    company: "echoAR",
+    link: "https://www.linkedin.com/in/alongrinshpoon/",
+  },
+  {
+    name: "Steve Wozniak",
+    image: "./img/speaker/judge1.svg",
+    designation: "CEO",
+    company: "echoAR",
+    link: "https://www.linkedin.com/in/alongrinshpoon/",
+  },
+  {
+    name: "Steve Wozniak",
+    image: "./img/speaker/judge1.svg",
+    designation: "CEO",
+    company: "echoAR",
+    link: "https://www.linkedin.com/in/alongrinshpoon/",
+  },
+  {
+    name: "Steve Wozniak",
+    image: "./img/speaker/judge1.svg",
+    designation: "CEO",
+    company: "echoAR",
+    link: "https://www.linkedin.com/in/alongrinshpoon/",
+  },
+  {
+    name: "Steve Wozniak",
     image: "./img/speaker/judge1.svg",
     designation: "CEO",
     company: "echoAR",
@@ -38,17 +72,10 @@ const Heading = styled.h2`
   text-decoration-color: 2px solid #deb7f5;
   text-shadow: 0px 0px 50px #b741ff;
 `;
-const myStyle = {
-  backgroundImage: `url(${bg})`,
-  fontSize: "50px",
-  height: "100%",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-};
 
 const Judges = () => {
   return (
-    <div style={myStyle}>
+    <div class="myStyle">
       <Heading>Judges</Heading>
       <div className="row gx-0 py-5 justify-content-center">
         {JUDGES.map((item, index) => {

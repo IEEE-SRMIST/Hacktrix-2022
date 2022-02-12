@@ -14,6 +14,7 @@ const HomeWrapper = styled.main`
 `;
 
 const Home = () => {
+
   return (
     <HomeWrapper>
       <Landing />
