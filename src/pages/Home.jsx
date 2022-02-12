@@ -1,6 +1,7 @@
 import React from "react";
 import Landing from "../components/Home/Landing";
 import Tracks from "../components/Tracks/Tracks";
+import About from "../components/About/About";
 
 import styled from "styled-components";
 
@@ -12,8 +13,9 @@ const HomeWrapper = styled.main`
 const Home = () => {
   return (
     <HomeWrapper>
-      {/* <Landing /> */}
-      <Tracks />
+      <About />
+    <Tracks />
+
     </HomeWrapper>
   );
 };
