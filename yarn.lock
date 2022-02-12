@@ -6812,6 +6812,7 @@
     "@csstools/postcss-hwb-function" "^1.0.0"
     "@csstools/postcss-is-pseudo-class" "^2.0.0"
     "@csstools/postcss-normalize-display-values" "^1.0.0"
+
     "autoprefixer" "^10.4.2"
     "browserslist" "^4.19.1"
     "css-blank-pseudo" "^3.0.2"
@@ -7149,6 +7150,7 @@
   "integrity" "sha512-3i0L2CyIlROz7mxETEdfif6Sfhh9Lfpzi10CtcGs1emDQStmZfWjJbAIMtRD0opVUjQuFWqHZyRZ9PPzKCFxWg=="
   "resolved" "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.0.tgz"
   "version" "5.0.0"
+
   dependencies:
     "@babel/core" "^7.16.0"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.3"
