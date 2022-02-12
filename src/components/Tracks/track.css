@@ -48,7 +48,7 @@
   position: absolute;
   width: 350px;
   top: -170px;
-  left: 35px;
+  left: 45px;
   border: 1px solid #000000;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -83,6 +83,11 @@
 
   .track-img {
     margin: 15px 0;
+    left: 35px;
+  }
+
+  .frame-img {
+    left: 50px;
   }
 
   .item-title {
