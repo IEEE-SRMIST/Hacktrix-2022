@@ -1,14 +1,10 @@
 import React from "react";
 import Landing from "../components/Home/Landing";
-import Tracks from "../components/Tracks/Tracks";
-import About from "../components/About/About";
-
 import styled from "styled-components";
-import Faq from "../components/FAQ/FAQs";
-
+import PrizeFile from "../components/Prizes/PrizesFile";
 const HomeWrapper = styled.main`
-  background-color: #09123d;
   min-height: 100vh;
+  background-color: #09123d;
 `;
 
 const Home = () => {
@@ -17,6 +13,7 @@ const Home = () => {
       <Landing />
       <About />
       <Tracks />
+      <PrizeFile />
       <Faq />
     </HomeWrapper>
   );
