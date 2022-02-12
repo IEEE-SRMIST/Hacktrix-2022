@@ -18,7 +18,7 @@ export const BottomDegign = styled.div`
     bottom: 0;
     width: 40vw;
     height: 80vh;
-    z-imdex: 10;
+    z-index: 10;
     // transform: matrix(0.88, 0.32, -0.56, 0.93, 0, 0);
     background-image: url(${bottomDegign});
     background-position: center;
@@ -48,7 +48,7 @@ export const Wrapper = styled.div`
     @media (max-width:780px){
         width: 95%;
     }
-    @media (max-width:430px){
+    @media (max-width:460px){
         width: 99%;
     }
 `
@@ -77,15 +77,11 @@ export const Heading = styled.div`
     @media (max-width:940px){
         margin-top: 7vh;
         margin-bottom: 7vh;
-    }
-    
-    @media (max-width:430px){
-        margin-top: 7vh;
-        margin-bottom: 7vh;
         font-size: 48px;
         line-height: 56px;
     }
-    @media (max-width:420px){
+    
+    @media (max-width:460px){
         margin-top: 7vh;
         margin-bottom: 7vh;
         font-size: 36px;
@@ -100,7 +96,7 @@ export const Hex =  styled.div`
   border-radius: 0.1em/0.05em;
   border: 2px solid #9A35FF;
   transition: opacity .5s;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 62px;
     display: flex;
     justify-content: center;
@@ -135,17 +131,22 @@ export const Hex =  styled.div`
       }
 
     @media (max-width:940px){
-        font-size: 36px;
-        
-    }
-    @media (max-width:940px){
-        font-size: 40px;
+        font-size: 30px;
     }
     @media (max-width:780px){
-        font-size: 32px;
+        font-size: 26px;
     }
     @media (max-width:430px){
-        font-size: 28px;
+        font-size: 22px;
+        border: 1px solid #9A35FF;
+        :before {
+        border-top: 1px solid #9A35FF;
+        border-bottom: 1px solid #9A35FF;
+        }
+        :after {
+        border-top: 1px solid #9A35FF;
+        border-bottom: 1px solid #9A35FF;
+        }
     }
 
 `
@@ -153,20 +154,20 @@ export const HexText = styled.div`
     font-family: Chakra Petch;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 38px;
     line-height: 62px;
     color: #FFFFFF;
     z-index:20;
     transform: rotate(-90deg);
 
     @media (max-width:940px){
-        font-size: 40px;
+        font-size: 26px;
     }
     @media (max-width:780px){
-        font-size: 32px;
+        font-size: 22px;
     }
-    @media (max-width:430px){
-        font-size: 28px;
+    @media (max-width:460px){
+        font-size: 18px;
     }
 `
 export const Text = styled.div`
@@ -174,7 +175,7 @@ export const Text = styled.div`
     font-family: Gothic A1;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.25em;
+    font-size: 20px;
     line-height: 1.4em;
     letter-spacing: 0.1em;
     width: 39%;
@@ -184,41 +185,34 @@ export const Text = styled.div`
 
 
     @media (max-width:1024px){
-        font-size: 28px;
+        font-size: 18px;
         line-height: 37px;
         width:38.2%;
     }
 
-    @media (max-width:940px){
-        font-size: 25px;
-        line-height: 34px;
-        // letter-spacing: 0.1em;
-        width:39%;
-    }
-
     @media (max-width:780px){
-        font-size: 21px;
-        line-height: 30px;
-        // letter-spacing: 0.1em;
-        width:41%;
-        padding-left:${props=>props.ml?17:0}px;
-        padding-right:${props=>props.mr?17:0}px;
-    }
-    @media (max-width:430px){
         font-size: 16px;
-        line-height: 25px;
+        line-height: 22px;
         // letter-spacing: 0.1em;
+        width:41%;
         padding-left:${props=>props.ml?17:0}px;
         padding-right:${props=>props.mr?17:0}px;
+    }
+    @media (max-width:460px){
+        font-size: 12px;
+        line-height: 22px;
+        // letter-spacing: 0.1em;
+        padding-left:${props=>props.ml?13:8}px;
+        padding-right:${props=>props.mr?13:8}px;
         width:41%;
     }
-    @media (max-width:325px){
-        font-size: 14px;
-        line-height: 23px;
+    @media (max-width:345px){
+        font-size: 12px;
+        line-height: 22px;
         // letter-spacing: 0.1em;
-        padding-left:${props=>props.ml?17:0}px;
-        padding-right:${props=>props.mr?17:0}px;
-        width:40%;
+        padding-left:${props=>props.ml?10:0}px;
+        padding-right:${props=>props.mr?10:0}px;
+        width:41%;
     }
 
 `
@@ -245,19 +239,19 @@ export const Item = styled.div`
     }
 `
 export const Digonal = styled.div`
-    border: 2px dashed #FFFFFF;
+    border: 1px dashed #FFFFFF;
     transform: ${props=>props.direction?
                 `rotate(146.98deg)`:
                 `matrix(0.84, 0.54, 0.54, -0.84, 0, 0)`};
-    width: 16%;
+    width: 17%;
 
     @media (max-width: 1024px){
         width: 17.2%;
     }
     @media (max-width: 780px){
-        width: 10.4%;
+        width: 12%;
     }
-    @media (max-width: 430px){
-        width: 14.4%;
+    @media (max-width: 460px){
+        width: 15.2%;
     }
 `
