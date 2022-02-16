@@ -14,8 +14,6 @@
   text-align: center;
   font-size: 65px;
   color: rgba(255, 255, 255, 0.95);
-  margin-bottom: 130px;
-  margin-top: 100px;
   font-weight: 800;
   text-decoration-color: 2px solid #deb7f5;
   text-shadow: 0px 0px 50px #b741ff;
@@ -27,21 +25,23 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .parent {
   position: relative;
   top: 0;
   left: 0;
+  margin-top: 4rem;
+  margin-bottom: -70px;
 }
 
 .track-img {
-  height: 80px;
+  height: 8rem;
+  width: 8rem;
   position: relative;
-  top: 0;
-  left: 0;
-  border: 1px solid #000000;
+  bottom: 4rem;
+  left: 1rem;
 }
 
 .frame-img {
@@ -49,15 +49,12 @@
   width: 350px;
   top: -170px;
   left: 45px;
-  border: 1px solid #000000;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .item-title {
   min-height: 65px;
   min-width: 150px;
-  margin-top: 200px;
+  margin-top: 10rem;
 }
 
 .tracks-title {
@@ -71,8 +68,10 @@
   font-size: 1.1rem;
   margin-bottom: 120px;
 }
+@media screen and (min-device-width: 710px) {
+}
 
-@media (max-width: 768px) {
+@media screen and (min-device-width: 550px) and (max-device-width: 710px) {
   .track-title {
     margin-bottom: 70px;
   }
@@ -82,22 +81,34 @@
   }
 
   .track-img {
-    margin: 15px 0;
-    left: 35px;
+    height: 8rem;
+    width: 8rem;
+    position: relative;
+    bottom: 17rem;
+    right: 8rem;
   }
 
   .frame-img {
-    left: 50px;
+    position: static;
+    width: 350px;
+    margin: 2rem 5rem;
   }
 
   .item-title {
     min-height: 0px;
   }
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    margin-bottom: -200px;
+  }
 }
 
-@media (max-width: 360px) {
+@media screen and (min-device-width: 360px) and (max-device-width: 550px) {
   .track .container {
-    padding: 30px;
+    padding: 20px;
   }
 
   .tracks-title {
@@ -105,5 +116,27 @@
   }
   .item-title {
     margin-top: 50px;
+  }
+
+  .track-img {
+    height: 8rem;
+    width: 8rem;
+    position: relative;
+    bottom: 15rem;
+    left: 0rem;
+    border: 1px solid #000000;
+  }
+
+  .frame-img {
+    position: static;
+    width: 350px;
+    left: 1rem;
+    border: 1px solid #000000;
+  }
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 0;
   }
 }
