@@ -14,7 +14,6 @@
   text-align: center;
   font-size: 65px;
   color: rgba(255, 255, 255, 0.95);
-  margin: 100px 0;
   font-weight: 800;
   text-decoration-color: 2px solid #deb7f5;
   text-shadow: 0px 0px 50px #b741ff;
@@ -34,6 +33,7 @@
   top: 0;
   left: 0;
   margin-top: 4rem;
+  margin-bottom: -70px;
 }
 
 .track-img {
@@ -49,7 +49,6 @@
   width: 350px;
   top: -170px;
   left: 45px;
-  
 }
 
 .item-title {
@@ -72,7 +71,6 @@
 @media screen and (min-device-width: 710px) {
 }
 
-
 @media screen and (min-device-width: 550px) and (max-device-width: 710px) {
   .track-title {
     margin-bottom: 70px;
@@ -89,7 +87,7 @@
     bottom: 17rem;
     right: 8rem;
   }
-  
+
   .frame-img {
     position: static;
     width: 350px;
@@ -104,6 +102,7 @@
     top: 0;
     left: 0;
     margin-top: 0;
+    margin-bottom: -200px;
   }
 }
 
@@ -127,7 +126,7 @@
     left: 0rem;
     border: 1px solid #000000;
   }
-  
+
   .frame-img {
     position: static;
     width: 350px;
@@ -140,7 +139,4 @@
     left: 0;
     margin-top: 0;
   }
-  
-
-
 }
