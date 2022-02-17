@@ -26,7 +26,7 @@ const NavbarComponent = styled.nav`
 const NavbarList = styled.ul`
   list-style: none;
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: auto;
   justify-content: center;
   gap: 2em;
@@ -91,7 +91,7 @@ const DevfolioImage = styled.a`
 function Navbar() {
   const [offset, setOffset] = useState(0);
   const navLinks = [
-    { path: "#about", name: "Why HackTrix?" },
+    { path: "#about", name: "HackTrix?" },
     { path: "#tracks", name: "Tracks" },
     { path: "#Sponsors", name: "Sponsors" },
     { path: "#Prizes", name: "Prizes" },
