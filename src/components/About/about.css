@@ -47,6 +47,12 @@
   font-size: 16px;
 }
 
+p {
+  font-family: "Bios";
+  font-size: 13px;
+  text-shadow: 0px 0px 12px #b741ff;
+}
+
 .about-content span {
   font-size: 16px;
 }
@@ -79,6 +85,14 @@
 
   .about-content {
     text-align: center;
+    font-family: "Bios";
+  }
+
+  .about-bullet {
+    font-family: inherit;
+    font-size: 35px;
+    color: #b741ff;
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.95);
   }
 }
 
