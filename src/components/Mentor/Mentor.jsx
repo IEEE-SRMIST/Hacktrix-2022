@@ -75,7 +75,7 @@ const Heading = styled.h2`
 
 const Mentor = () => {
   return (
-    <div class="myStyle">
+    <div class="myStyle" id="Mentor">
       <Heading>Mentor</Heading>
       <div className="row py-5 gx-0 justify-content-center">
         {MENTOR.map((item, index) => {

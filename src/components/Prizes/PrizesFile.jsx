@@ -11,6 +11,7 @@ const PrizesFile = () => {
         backgroundAttachment: 'fixed',
         paddingTop: '20px',
       }}
+      id='Prizes'
     >
       <Prizes />
       <Cards />

@@ -120,6 +120,7 @@ const Sponsors = () => {
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
       }}
+      id='Sponsors'
     >
       <Heading style={{ paddingTop: "200px" }}>Platinum Sponsors</Heading>
       <Wrapper>
