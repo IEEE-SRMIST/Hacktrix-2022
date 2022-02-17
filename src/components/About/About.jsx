@@ -8,10 +8,9 @@ const About = () => {
       <div className="about" id="About">
         <div className="container">
           <div className="about-title">
-            About
-            <div className="about-img">
-              <img src="./img/Hacktrix- Purple Img 1.svg" alt="ht-logo" />
-            </div>
+            <p className="about-title">Why Choose</p>
+            <span className="about-hack">Hack</span>
+            <span className="about-trix">Trix</span>?
           </div>
           <div className="about-content">
             Coding is today’s language of creativity, and like all creative

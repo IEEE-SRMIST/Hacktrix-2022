@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import BG from "../../assets/img/BG.png";
+import LandingBackground from "../../assets/img/landingBg.png";
 const CardBox = styled.div`
   width: 100%;
   height: 100%;
   margin: 5% auto 0px auto;
-  padding: 10% 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-auto-rows: minmax(100px, auto);
-  grid-auto-columns: minmax(100px, auto); */
+
   justify-content: center;
   overflow: none;
   @media (max-width: 768px) {
@@ -37,8 +35,8 @@ const TextHolder = styled.p`
   margin: 20px auto;
 `;
 const Heading = styled.h2`
+  padding: 10% 0px 0px 0px;
   text-align: center;
-
   color: #ffffff;
   text-shadow: 0px 0px 12px #9226ff;
 `;
@@ -49,7 +47,7 @@ const Cards = () => {
         style={{
           paddingTop: "20px",
           marginTop: "0px",
-          backgroundImage: `url(${BG})`,
+          backgroundImage: `url(${LandingBackground})`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
         }}
@@ -79,9 +77,12 @@ const Cards = () => {
       {/* participation starts */}
       <section
         style={{
-          backgroundImage: `url(${BG})`,
+          backgroundImage: `url(${LandingBackground})`,
+
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
           backgroundAttachment: "fixed",
+          backgroundSize: "cover",
         }}
       >
         <Heading>Participation Prizes</Heading>

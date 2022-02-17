@@ -3,7 +3,6 @@ import styled from "styled-components";
 import polyblue from "../../assets/img/polyblue.png";
 import polygold from "../../assets/img/polygold.png";
 import polypurple from "../../assets/img/polypurple.png";
-import BG from "../../assets/img/BG.png";
 
 const Ellipse3 = styled.div`
   /* blue */
@@ -122,8 +121,6 @@ const Prizetext = styled.div`
   }
 `;
 const PrizeWrapper = styled.main`
-  /* background: #671267; */
-  /* background: url({BG}); */
   width: 60%;
   height: 100%;
   margin: 5px auto;

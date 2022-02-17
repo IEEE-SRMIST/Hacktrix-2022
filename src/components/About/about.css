@@ -11,13 +11,27 @@
   text-shadow: 0px 0px 12px #b741ff;
   margin-bottom: 30px;
   font-weight: 800;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.about-hack {
+  font-family: inherit;
+  font-size: 35px;
+  color: #b741ff;
+  text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.95);
+}
+
+.about-trix {
+  font-family: inherit;
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0px 0px 12px #b741ff;
+}
+
 .about-img {
-  width: 18%;
+  width: 20%;
+  margin-right: -90px;
   position: relative;
   top: -10px;
   left: -40px;
@@ -59,6 +73,7 @@
     top: 0px;
     margin-bottom: -50px;
     margin-top: -50px;
+
     left: 0px;
   }
 
@@ -70,6 +85,9 @@
 @media (max-width: 360px) {
   .about .container {
     padding: 30px;
+  }
+  .about-title {
+    font-size: 15px;
   }
   .about-img {
     width: 70%;
