@@ -64,7 +64,7 @@ const SPEAKER = [
 
 const Heading = styled.h2`
   text-align: center;
-  font-size: 65px;
+  font-size: 55px;
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 50px;
   margin-top: 20px;
