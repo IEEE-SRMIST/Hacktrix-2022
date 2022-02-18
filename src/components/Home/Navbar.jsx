@@ -23,6 +23,7 @@ const NavbarList = styled.ul`
   list-style: none;
   display: flex;
   height: 60px;
+  margin-bottom: -1rem;
   justify-content: space-evenly;
   gap: 2em;
   align-items: center;
@@ -39,9 +40,10 @@ const NavbarList = styled.ul`
     position: fixed;
     bottom: 4rem;
     left: 50%;
+
     transform: translateX(-50%);
     height: 40px;
-    padding: 1em .25em;
+    padding: 1em 0.25em;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -54,11 +56,11 @@ const NavbarList = styled.ul`
   @media (max-width: 425px) {
     gap: 10px;
   }
-`
+`;
 
 const NavbarItem = styled.li`
   @media (max-width: 800px) {
-    padding: 0 .5em;
+    padding: 0 0.5em;
   }
 `;
 

@@ -66,13 +66,8 @@ const Tracks = () => {
                   className="col-12 col-md-5 col-lg-4 text-center px-3 py-1"
                 >
                   <div className="track-item">
-                    <div className="parent">
-                      <img
-                        alt="HackTrix"
-                        src={item.src}
-                        className="track-img"
-                      />
-                    </div>
+                    <img alt="HackTrix" src={item.src} className="track-img" />
+
                     <div className="item-title">
                       <h2 className="tracks-title">{item.title}</h2>
                     </div>
