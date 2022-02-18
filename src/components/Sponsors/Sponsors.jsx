@@ -111,6 +111,14 @@ const Heading = styled.h2`
   justify-content: center;
 `;
 
+const P = styled.h6`
+  display: flex;
+  align-items: center;
+  color: #b741ff;
+  text-shadow: 0px 0px 50px #ffffff;
+  justify-content: center;
+`;
+
 const SponserText = styled.p`
   font-family: "Gothic A1", sans-serif;
 `;
@@ -129,8 +137,8 @@ const Sponsors = () => {
       id="Sponsors"
     >
       <SponserTitle style={{ paddingTop: "100px" }}>Our Sponsers</SponserTitle>
-      <Heading style={{ paddingTop: "100px" }}>Platinum Sponsors</Heading>
-      <Wrapper>
+      {/* <Heading style={{ paddingTop: "100px" }}>Platinum Sponsors</Heading> */}
+      {/* <Wrapper>
         <a href="https://devfolio.co/" target="_blank" rel="noreferrer">
           <Logos src={Devfolio} />
         </a>
@@ -141,8 +149,11 @@ const Sponsors = () => {
         >
           <Logos src={Wolfram} />
         </a>
-      </Wrapper>
-      <MarqueeR />
+      </Wrapper> */}
+      <P style={{ paddingTop: "10px" }}>
+        We have some special sponser's coming up here!
+      </P>
+      {/* <MarqueeR />
       <Heading style={{ paddingTop: "100px" }}>Community Sponsor</Heading>
       <Wrapper>
         <a
@@ -185,7 +196,7 @@ const Sponsors = () => {
             <SponserText className="sponserText">Sponsor Us</SponserText>
           </Sponbutton>
         </a>
-      </GlowWrapper>
+      </GlowWrapper> */}
     </div>
   );
 };

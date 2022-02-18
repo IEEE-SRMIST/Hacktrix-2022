@@ -12,7 +12,7 @@ const PrizesFile = () => {
       id="Prizes"
     >
       <Prizes />
-      <Cards />
+      {/* <Cards /> */}
     </div>
   );
 };

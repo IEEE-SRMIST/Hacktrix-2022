@@ -170,14 +170,25 @@ const Heading = styled.h2`
   color: #ffffff;
   text-shadow: 0px 0px 12px #9226ff;
 `;
+const P = styled.h6`
+  text-align: center;
+  font-size: 25px;
+  color: #b741ff;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-weight: 800;
+  text-decoration-color: 2px solid #deb7f5;
+  text-shadow: 0px 0px 50px #b741ff;
+`;
+
 export default function Prizes() {
   return (
     <>
       <Heading>Prizes</Heading>
-      <PrizeWrapper>
-        {/* the purple circle */}
+      <P>Watch out to grab some really cool prizes!</P>
+      {/* <PrizeWrapper>
         <Holder>
-          <img src={polypurple} id="purple"/>
+          <img src={polypurple} id="purple" />
           <Ellipse1>
             <Prizetext>899</Prizetext>
             <EllipseP>
@@ -186,9 +197,9 @@ export default function Prizes() {
           </Ellipse1>
           <Prizetext />
         </Holder>
-        {/* gold circle */}
+
         <Goldholder>
-          <img src={polygold} id="gold"/>
+          <img src={polygold} id="gold" />
           <Ellipse2>
             <Prizetext>999</Prizetext>
             <EllipseG>
@@ -197,9 +208,9 @@ export default function Prizes() {
           </Ellipse2>
           <Prizetext />
         </Goldholder>
-        {/* blue circle */}
+
         <Holder>
-          <img src={polyblue} id="blue"/>
+          <img src={polyblue} id="blue" />
           <Ellipse3>
             <Prizetext>799</Prizetext>
             <EllipseB>
@@ -208,7 +219,7 @@ export default function Prizes() {
           </Ellipse3>
           <Prizetext />
         </Holder>
-      </PrizeWrapper>
+      </PrizeWrapper> */}
     </>
   );
 }
