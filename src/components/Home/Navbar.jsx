@@ -21,17 +21,18 @@ const NavbarComponent = styled.nav`
 const NavbarList = styled.ul`
   list-style: none;
   display: flex;
-  height: 60px;
+  height: 25px;
   margin-bottom: -1rem;
   justify-content: space-evenly;
   gap: 2em;
   align-items: center;
   transition: all 500ms;
   font-size: 1.35rem;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 8px;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 30px;
   z-index: 100;
+  padding: 1.2em 1em;
 
   @media (max-width: 800px) {
     gap: 20px;

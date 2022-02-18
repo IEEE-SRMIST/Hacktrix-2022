@@ -10,13 +10,13 @@ const FaqWrapper = styled.div`
   background-image: url(${FaqTop}), url(${FaqBottom});
   background-repeat: no-repeat;
   background-size: 540px;
-
   @media (max-width: 768px) {
     background-size: 280px, 200px;
   }
 `;
 
 const FaqCont = styled.div`
+  border-top: 1px solid rgba(0, 255, 0, 0.2);
   padding: 160px;
   @media (max-width: 768px) {
     padding: 80px 40px;
@@ -55,13 +55,12 @@ const Accordion = styled.div`
     font-size: 22px;
     line-height: 28px;
     letter-spacing: 0.1em;
-    padding: 1rem;
+    padding: 0.5rem;
     @media (max-width: 768px) {
       font-size: 16px;
       line-height: 22px;
     }
   }
-
   button::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     @media (max-width: 768px) {
