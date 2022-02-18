@@ -65,6 +65,10 @@ const Heading2 = styled.h2`
 const Tagline = styled.h3`
   color: #d898ff;
   text-shadow: 0px 0px 24px #b741ff;
+  font-size: 30px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 function Hero() {

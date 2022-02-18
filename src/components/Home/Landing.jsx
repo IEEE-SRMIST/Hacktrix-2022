@@ -36,6 +36,7 @@ const Landing = () => {
     >
       <Navbar />
       <Container>
+        
         <Hero />
         <Countdown />
       </Container>

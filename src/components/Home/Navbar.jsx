@@ -54,6 +54,7 @@ const NavbarList = styled.ul`
   }
   @media (max-width: 425px) {
     gap: 10px;
+    font-size: 0.8rem;
   }
 `;
 
