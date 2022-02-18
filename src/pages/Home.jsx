@@ -7,6 +7,7 @@ import About from "../components/About/About";
 import Tracks from "../components/Tracks/Tracks";
 import Faq from "../components/FAQ/FAQs";
 import Speaker from "../components/Speaker/Speaker";
+import Footer from "../components/Footer/Footer";
 import Judges from "../components/Judges/Judges";
 import Mentor from "../components/Mentor/Mentor";
 import Schedule from "../components/Schedule/Schedule";
@@ -29,6 +30,7 @@ const Home = () => {
       <Speaker />
       <Mentor />
       <Faq />
+      <Footer />
     </HomeWrapper>
   );
 };

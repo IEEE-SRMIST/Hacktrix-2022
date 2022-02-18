@@ -4,7 +4,7 @@ import * as Styled from './style'
 const Schedule = ()=>{
 
     return(
-        <Styled.ScheduleWrapper>
+        <Styled.ScheduleWrapper id='Schedule'>
 
             <Styled.TopDesign />
             <Styled.BottomDegign />

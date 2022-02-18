@@ -7,7 +7,7 @@ import Fibonalabs from "../../assets/sponsor-logos/General/Fibonalabs.png";
 import Hack_Club from "../../assets/sponsor-logos/General/Hack_Club.png";
 import MSLA from "../../assets/sponsor-logos/General/MSLA.png";
 import Wolfram from "../../assets/sponsor-logos/General/wolfram.png";
-import BackG from "../../assets/sponsor-logos/Backdrop.png";
+import LandingBackground from "../../assets/img/landingBg.png";
 
 // copied
 const Logos = styled.img`
@@ -98,11 +98,17 @@ const Sponbutton = styled.button`
       inset 0 0 0.5em 0.25em var(--glow-color);
   }
 `;
-const Heading = styled.h2`
+const SponserTitle = styled.h1`
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px 0;
+`;
+
+const Heading = styled.h2`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const SponserText = styled.p`
@@ -112,7 +118,7 @@ const Sponsors = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${BackG})`,
+        backgroundImage: `url(${LandingBackground})`,
         height: "100%",
         width: "100%",
         backgroundRepeat: "no-repeat",
@@ -120,8 +126,10 @@ const Sponsors = () => {
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
       }}
+      id="Sponsors"
     >
-      <Heading style={{ paddingTop: "200px" }}>Platinum Sponsors</Heading>
+      <SponserTitle style={{ paddingTop: "100px" }}>Our Sponsers</SponserTitle>
+      <Heading style={{ paddingTop: "100px" }}>Platinum Sponsors</Heading>
       <Wrapper>
         <a href="https://devfolio.co/" target="_blank" rel="noreferrer">
           <Logos src={Devfolio} />

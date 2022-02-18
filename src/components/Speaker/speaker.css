@@ -1,5 +1,5 @@
 .myStyle {
-  background: url("../../assets/svg/overlay.svg");
+  background: url("../../assets/img/landingBg.png");
   font-size: "50px";
   height: "100%";
   background-size: "cover";
@@ -102,19 +102,6 @@
 
 .col-12 {
   padding: 0 3rem;
-}
-
-.bcomspeaker-btn {
-  border: 1px dashed rgba(0, 255, 0, 0.95);
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 24px;
-}
-
-a.bcomspeaker-btn:hover {
-  background-color: rgba(0, 255, 0, 0.95);
-  color: #000;
-  font-weight: 600;
 }
 
 @media (width: 1024px) and (min-height: 1366px) {

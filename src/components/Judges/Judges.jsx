@@ -75,7 +75,7 @@ const Heading = styled.h2`
 
 const Judges = () => {
   return (
-    <div class="myStyle">
+    <div class="myStyle" id="Judges">
       <Heading>Judges</Heading>
       <div className="row gx-0 py-5 justify-content-center">
         {JUDGES.map((item, index) => {

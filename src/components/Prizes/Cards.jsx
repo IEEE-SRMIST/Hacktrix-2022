@@ -1,35 +1,33 @@
 import React from "react";
 import styled from "styled-components";
-import BG from "../../assets/img/BG.png";
+import LandingBackground from "../../assets/img/landingBg.png";
 const CardBox = styled.div`
   width: 100%;
   height: 100%;
-  margin: 5% auto 0px auto;
-  padding: 10% 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* grid-auto-rows: minmax(100px, auto);
-  grid-auto-columns: minmax(100px, auto); */
+  grid-template-columns: 350px 350px 350px;
   justify-content: center;
   overflow: none;
   @media (max-width: 768px) {
     display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 `;
 const CardContainer = styled.div`
-  min-width: 400px;
-  min-height: 450px;
+  min-width: 300px;
+  min-height: 350px;
   background: #12151b;
-  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5), inset 0px 10px 0px #2ca0e2;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5), inset 0px 2px 0px #d7a31a;
   border-radius: 8px;
   margin: 50px auto;
   @media (max-width: 768px) {
     margin: 20px auto;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 250px;
+    min-height: 250px;
   }
 `;
 const TextHolder = styled.p`
@@ -37,8 +35,8 @@ const TextHolder = styled.p`
   margin: 20px auto;
 `;
 const Heading = styled.h2`
+  padding: 10% 0px 0px 0px;
   text-align: center;
-
   color: #ffffff;
   text-shadow: 0px 0px 12px #9226ff;
 `;
@@ -49,7 +47,7 @@ const Cards = () => {
         style={{
           paddingTop: "20px",
           marginTop: "0px",
-          backgroundImage: `url(${BG})`,
+          backgroundImage: `url(${LandingBackground})`,
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
         }}
@@ -79,9 +77,12 @@ const Cards = () => {
       {/* participation starts */}
       <section
         style={{
-          backgroundImage: `url(${BG})`,
+          backgroundImage: `url(${LandingBackground})`,
+
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
           backgroundAttachment: "fixed",
+          backgroundSize: "cover",
         }}
       >
         <Heading>Participation Prizes</Heading>
