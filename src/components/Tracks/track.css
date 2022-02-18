@@ -35,7 +35,7 @@
   top: 0;
   left: 0;
   margin-top: 4rem;
-  margin-bottom: -70px;
+  margin-bottom: -100px;
 }
 
 .track-img {
@@ -60,14 +60,15 @@
 }
 
 .tracks-title {
-  font-size: 34px;
+  font-size: 35px;
   margin-top: 30px;
   margin-bottom: 15px;
   color: rgba(216, 152, 255, 1);
+  text-shadow: 0px 0px 24px #fff;
 }
 
 .track-content {
-  font-size: 1.1rem;
+  font-size: 15px;
   margin-bottom: 120px;
 }
 @media screen and (min-device-width: 710px) {
@@ -88,6 +89,7 @@
     position: relative;
     bottom: 17rem;
     right: 8rem;
+    left: 0.2rem;
   }
 
   .frame-img {
@@ -104,6 +106,7 @@
     top: 0;
     left: 0;
     margin-top: 0;
+    margin-bottom: -270px;
   }
 }
 
