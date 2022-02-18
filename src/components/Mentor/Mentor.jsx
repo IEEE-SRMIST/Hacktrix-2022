@@ -87,7 +87,7 @@ const P = styled.h6`
 const Mentor = () => {
   return (
     <div class="myStyle" id="Mentor">
-      <Heading>Mentor</Heading>
+      <Heading>Mentors</Heading>
       <P>Coming up real soon.</P>
       <div className="row py-5 gx-0 justify-content-center">
         {MENTOR.map((item, index) => {

@@ -42,6 +42,8 @@
   height: 10rem;
   width: 10rem;
   position: relative;
+  margin-bottom: 20px;
+  margin-top: 30px;
   bottom: 4rem;
   left: -0.5rem;
 }
@@ -61,7 +63,7 @@
 
 .tracks-title {
   font-size: 35px;
-  margin-top: 30px;
+  margin-top: -12rem;
   margin-bottom: 15px;
   color: rgba(216, 152, 255, 1);
   text-shadow: 0px 0px 24px #fff;
@@ -129,7 +131,7 @@
     height: 8rem;
     width: 8rem;
     position: relative;
-    bottom: -1rem;
+    bottom: 8rem;
     border: 1px solid #000000;
   }
 
