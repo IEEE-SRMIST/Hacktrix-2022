@@ -21,6 +21,7 @@ const Container = styled.div`
     font-size: 12px;
     display: block;
   }
+
   * {
     font-family: "Bios";
   }
@@ -32,6 +33,11 @@ const EventDate = styled.div`
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
   }
 `;
 
@@ -58,6 +64,12 @@ const Time = styled.span`
   span {
     font-size: 0.8rem;
     vertical-align: text-top;
+  }
+  @media (max-width: 425px) {
+    font-size: 1em;
+    span{
+      font-size: 0.4rem;
+    }
   }
 `;
 

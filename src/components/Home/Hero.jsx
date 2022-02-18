@@ -10,7 +10,7 @@ const Heading = styled.h1`
   font-size: 6rem;
   text-shadow: 0px 0px 50px #b741ff;
   @media (max-width: 800px) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 `;
 

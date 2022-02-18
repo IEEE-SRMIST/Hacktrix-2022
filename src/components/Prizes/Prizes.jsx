@@ -177,7 +177,7 @@ export default function Prizes() {
       <PrizeWrapper>
         {/* the purple circle */}
         <Holder>
-          <img src={polypurple} />
+          <img src={polypurple} id="purple"/>
           <Ellipse1>
             <Prizetext>899</Prizetext>
             <EllipseP>
@@ -188,7 +188,7 @@ export default function Prizes() {
         </Holder>
         {/* gold circle */}
         <Goldholder>
-          <img src={polygold} />
+          <img src={polygold} id="gold"/>
           <Ellipse2>
             <Prizetext>999</Prizetext>
             <EllipseG>
@@ -199,7 +199,7 @@ export default function Prizes() {
         </Goldholder>
         {/* blue circle */}
         <Holder>
-          <img src={polyblue} />
+          <img src={polyblue} id="blue"/>
           <Ellipse3>
             <Prizetext>799</Prizetext>
             <EllipseB>

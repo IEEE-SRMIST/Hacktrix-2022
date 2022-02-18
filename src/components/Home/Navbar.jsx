@@ -18,6 +18,7 @@ const NavbarComponent = styled.nav`
   justify-content: space-between;
   z-index: 100;
 
+
   @media (max-width: 800px) {
     position: static;
   }
@@ -26,19 +27,22 @@ const NavbarComponent = styled.nav`
 const NavbarList = styled.ul`
   list-style: none;
   display: flex;
-  width: 90%;
-  margin: auto;
-  justify-content: center;
+  height:60px;
+  justify-content: space-evenly;
   gap: 2em;
-  flex: 1;
   align-items: center;
   transition: all 500ms;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 8px;
+  z-index: 100;
 
   @media (max-width: 800px) {
-    gap: revert;
+    gap: 20px;
     justify-content: space-evenly;
     position: fixed;
+    height:40px;
     padding: 1em 0;
     bottom: 4rem;
     left: 50%;
@@ -51,7 +55,12 @@ const NavbarList = styled.ul`
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     z-index: 100;
+    @media (max-width: 425px) {
+      gap: 10px;
+      left: 50%;
+    }
   }
+  
 `;
 
 const NavbarItem = styled.li``;

@@ -13,6 +13,9 @@ const Container = styled.div`
   transform: translate(-50%, -50%);
   > * {
     margin-top: 4em;
+    @media (max-width: 425px){
+      margin-top: 1em;
+    }
   }
 `;
 
