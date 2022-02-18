@@ -7,7 +7,6 @@ const NavbarComponent = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   padding: 1em 1.5em;
   display: flex;
@@ -67,7 +66,7 @@ const NavbarItem = styled.li`
 const NavbarLink = styled.a`
   text-decoration: none;
   color: #d898ff;
-
+  font-family: "Bios";
   text-shadow: 0px 0px 24px #b741ff;
   :hover {
     color: #cb7efb;
