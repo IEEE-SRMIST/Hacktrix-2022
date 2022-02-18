@@ -19,10 +19,16 @@ const Heading2 = styled.h2`
   font-size: 2rem;
   position: relative;
 
-  span {
+  .date-before {
     font: inherit;
     color: #d898ff;
     text-shadow: 0px 0px 24px #b741ff;
+  }
+
+  .date {
+    font: inherit;
+    color: #fff;
+    text-shadow: 0px 0px 55px #4169e1;
   }
 
   div {
@@ -39,7 +45,7 @@ const Heading2 = styled.h2`
     top: 12px;
     left: 0;
     width: 100%;
-    background: #fff;
+    background: rgba(216, 152, 255, 1);
     height: 1px;
     content: "";
   }
@@ -50,7 +56,7 @@ const Heading2 = styled.h2`
     bottom: 10px;
     left: 0;
     width: 100%;
-    background: #fff;
+    background: rgba(65, 105, 225, 1);
     height: 1px;
     content: "";
   }
@@ -67,7 +73,9 @@ function Hero() {
       <Heading>Hacktrix</Heading>
       <Heading2>
         <div>
-          <span>2</span>02<span>2</span>
+          <span className="date-before">2</span>
+          <span className="date">02</span>
+          <span className="date-before">2</span>
         </div>
       </Heading2>
       <Tagline>Build . Debug . Hack</Tagline>
