@@ -3,7 +3,7 @@
  */
 
 // Dependencies
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import IeeeLogo from "../../assets/img/ieeeLogo.png";
 import ApplyWithDevfolioBtn from "../../assets/img/applyDevfolioBtn.png";
@@ -28,15 +28,11 @@ const NavbarList = styled.ul`
   list-style: none;
   margin-bottom: -1rem;
   display: flex;
-  height: 60px;
   justify-content: space-evenly;
   gap: 2em;
   align-items: center;
   transition: all 500ms;
   font-size: 1.35rem;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 8px;
   z-index: 100;
 
   @media (max-width: 800px) {
