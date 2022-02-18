@@ -68,11 +68,6 @@ const Tracks = () => {
                   <div className="track-item">
                     <div className="parent">
                       <img
-                        alt="HackTrixFrame"
-                        src="./frame.svg"
-                        className="frame-img"
-                      />
-                      <img
                         alt="HackTrix"
                         src={item.src}
                         className="track-img"

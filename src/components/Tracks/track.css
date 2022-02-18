@@ -35,22 +35,22 @@
   top: 0;
   left: 0;
   margin-top: 4rem;
-  margin-bottom: -100px;
+  margin-bottom: -200px;
 }
 
 .track-img {
-  height: 8rem;
-  width: 8rem;
+  height: 10rem;
+  width: 10rem;
   position: relative;
   bottom: 4rem;
-  left: 1rem;
+  left: -0.5rem;
 }
 
 .frame-img {
   position: absolute;
   width: 350px;
-  top: -170px;
-  left: 45px;
+  top: -190px;
+  left: -20px;
 }
 
 .item-title {
@@ -72,6 +72,9 @@
   margin-bottom: 120px;
 }
 @media screen and (min-device-width: 710px) {
+  .track-img {
+    left: 0.5rem;
+  }
 }
 
 @media screen and (min-device-width: 550px) and (max-device-width: 710px) {
@@ -89,7 +92,7 @@
     position: relative;
     bottom: 17rem;
     right: 8rem;
-    left: 0.2rem;
+    left: 1rem;
   }
 
   .frame-img {
@@ -127,14 +130,14 @@
     width: 8rem;
     position: relative;
     bottom: 15rem;
-    left: 0rem;
+    left: 56rem;
     border: 1px solid #000000;
   }
 
   .frame-img {
     position: static;
     width: 350px;
-    left: 1rem;
+    left: -2rem;
     border: 1px solid #000000;
   }
   .parent {

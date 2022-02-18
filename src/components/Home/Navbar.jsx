@@ -11,8 +11,9 @@ import ApplyWithDevfolioBtn from "../../assets/img/applyDevfolioBtn.png";
 const NavbarComponent = styled.nav`
   position: fixed;
   top: 0;
+  padding: 10px;
   width: 100%;
-  padding: 1em 1.5em;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,8 +26,9 @@ const NavbarComponent = styled.nav`
 
 const NavbarList = styled.ul`
   list-style: none;
+  margin-bottom: -1rem;
   display: flex;
-  height:60px;
+  height: 60px;
   justify-content: space-evenly;
   gap: 2em;
   align-items: center;
@@ -39,9 +41,10 @@ const NavbarList = styled.ul`
 
   @media (max-width: 800px) {
     gap: 20px;
+    width: 80%;
     justify-content: space-evenly;
     position: fixed;
-    height:40px;
+    height: 40px;
     padding: 1em 0;
     bottom: 4rem;
     left: 50%;
@@ -57,9 +60,9 @@ const NavbarList = styled.ul`
     @media (max-width: 425px) {
       gap: 10px;
       left: 50%;
+      width: 80%;
     }
   }
-  
 `;
 
 const NavbarItem = styled.li``;
