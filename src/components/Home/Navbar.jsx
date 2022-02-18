@@ -17,10 +17,6 @@ const NavbarComponent = styled.nav`
   align-items: center;
   justify-content: space-between;
   z-index: 100;
-
-  @media (max-width: 800px) {
-    position: static;
-  }
 `;
 
 const NavbarList = styled.ul`
@@ -89,21 +85,21 @@ const DevfolioImage = styled.a`
 `;
 
 function Navbar() {
-  const [offset, setOffset] = useState(0);
+  // const [offset, setOffset] = useState(0);
   const navLinks = [
-    { path: "#about", name: "HackTrix?" },
+    { path: "#About", name: "HackTrix?" },
     { path: "#tracks", name: "Tracks" },
     { path: "#Sponsors", name: "Sponsors" },
     { path: "#Prizes", name: "Prizes" },
     { path: "#faqs", name: "FAQs" },
   ];
 
-  useEffect(() => {
-    const onScroll = () => setOffset(window.pageYOffset);
-    window.removeEventListener("scroll", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  // useEffect(() => {
+  //   const onScroll = () => setOffset(window.pageYOffset);
+  //   window.removeEventListener("scroll", onScroll);
+  //   window.addEventListener("scroll", onScroll, { passive: true });
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, []);
 
   return (
     <NavbarComponent>
