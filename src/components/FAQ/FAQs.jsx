@@ -55,7 +55,7 @@ const Accordion = styled.div`
     font-size: 22px;
     line-height: 28px;
     letter-spacing: 0.1em;
-    padding: 0.5rem;
+    padding: 1rem;
     @media (max-width: 768px) {
       font-size: 16px;
       line-height: 22px;
