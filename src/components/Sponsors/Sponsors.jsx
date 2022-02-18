@@ -150,9 +150,7 @@ const Sponsors = () => {
           <Logos src={Wolfram} />
         </a>
       </Wrapper> */}
-      <P style={{ paddingTop: "10px" }}>
-        We have some special sponser's coming up here!
-      </P>
+      <P style={{ paddingTop: "10px" }}>Special sponsers coming up here!</P>
       {/* <MarqueeR />
       <Heading style={{ paddingTop: "100px" }}>Community Sponsor</Heading>
       <Wrapper>

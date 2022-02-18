@@ -4,7 +4,7 @@ import styled from "styled-components";
 import PrizeFile from "../components/Prizes/PrizesFile";
 import Sponsors from "../components/Sponsors/Sponsors";
 import About from "../components/About/About";
-// import Tracks from "../components/Tracks/Tracks";
+import Tracks from "../components/Tracks/Tracks";
 import Faq from "../components/FAQ/FAQs";
 import Speaker from "../components/Speaker/Speaker";
 import Footer from "../components/Footer/Footer";
@@ -25,7 +25,7 @@ const Home = () => {
       <Schedule />
       <PrizeFile />
       <Sponsors />
-      {/* <Tracks /> */}
+      <Tracks />
       <Judges />
       <Speaker />
       <Mentor />

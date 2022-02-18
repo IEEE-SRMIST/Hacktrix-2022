@@ -1,9 +1,4 @@
-/**
- * Navbar Component
- */
-
-// Dependencies
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import IeeeLogo from "../../assets/img/ieeeLogo.png";
 import ApplyWithDevfolioBtn from "../../assets/img/applyDevfolioBtn.png";
@@ -11,14 +6,13 @@ import ApplyWithDevfolioBtn from "../../assets/img/applyDevfolioBtn.png";
 const NavbarComponent = styled.nav`
   position: fixed;
   top: 0;
-  padding: 10px;
-  width: 100%;
 
+  width: 100%;
+  padding: 1em 1.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 100;
-
   @media (max-width: 800px) {
     position: static;
   }
@@ -26,18 +20,20 @@ const NavbarComponent = styled.nav`
 
 const NavbarList = styled.ul`
   list-style: none;
-  margin-bottom: -1rem;
   display: flex;
+  height: 60px;
   justify-content: space-evenly;
   gap: 2em;
   align-items: center;
   transition: all 500ms;
   font-size: 1.35rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 8px;
   z-index: 100;
-
   @media (max-width: 800px) {
     gap: 20px;
-    width: 80%;
+    margin-bottom: -1rem;
     justify-content: space-evenly;
     position: fixed;
     height: 40px;
@@ -56,7 +52,6 @@ const NavbarList = styled.ul`
     @media (max-width: 425px) {
       gap: 10px;
       left: 50%;
-      width: 80%;
     }
   }
 `;
@@ -66,6 +61,7 @@ const NavbarItem = styled.li``;
 const NavbarLink = styled.a`
   text-decoration: none;
   color: #d898ff;
+
   text-shadow: 0px 0px 24px #b741ff;
   :hover {
     color: #cb7efb;
