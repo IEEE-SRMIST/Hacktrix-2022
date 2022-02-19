@@ -16,7 +16,6 @@ const FaqWrapper = styled.div`
 `;
 
 const FaqCont = styled.div`
-  border-top: 1px solid rgba(0, 255, 0, 0.2);
   padding: 160px;
   @media (max-width: 768px) {
     padding: 80px 40px;

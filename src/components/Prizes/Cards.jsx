@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import LandingBackground from "../../assets/img/landingBg.png";
 const CardBox = styled.div`
   width: 100%;
   height: 100%;
@@ -10,8 +9,6 @@ const CardBox = styled.div`
   overflow: none;
   @media (max-width: 768px) {
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
