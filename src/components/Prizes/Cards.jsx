@@ -43,15 +43,7 @@ const Heading = styled.h2`
 const Cards = () => {
   return (
     <>
-      <section
-        style={{
-          paddingTop: "20px",
-          marginTop: "0px",
-          backgroundImage: `url(${LandingBackground})`,
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-        }}
-      >
+      <section>
         <Heading>Winner Prizes</Heading>
         <CardBox>
           <CardContainer>
@@ -75,16 +67,7 @@ const Cards = () => {
         </CardBox>
       </section>
       {/* participation starts */}
-      <section
-        style={{
-          backgroundImage: `url(${LandingBackground})`,
-
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-          backgroundSize: "cover",
-        }}
-      >
+      <section>
         <Heading>Participation Prizes</Heading>
         <CardBox>
           <CardContainer>

@@ -27,13 +27,19 @@ const FaqTitle = styled.div`
   font-family: Bios;
   font-style: normal;
   text-align: center;
-  font-size: 56px;
+  font-size: 48px;
   margin-bottom: 30px;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0px 0px 12px #b741ff;
   line-height: 64px;
   letter-spacing: 0.3em;
+  @media (max-width: 768px) {
+    font-size: 44px;
+  }
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 const Faqs = styled.div`

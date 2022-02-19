@@ -103,6 +103,13 @@ const SponserTitle = styled.h1`
   align-items: center;
   justify-content: center;
   margin: 20px 0;
+  font-size: 48px;
+  @media (max-width: 768px) {
+    font-size: 44px;
+  }
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 const Heading = styled.h2`

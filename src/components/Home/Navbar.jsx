@@ -88,6 +88,7 @@ const LogoImage = styled.a`
 `;
 
 const DevfolioImage = styled.a`
+  padding-top: 10px;
   width: clamp(100px, 100%, 240px);
   img {
     width: 100%;
