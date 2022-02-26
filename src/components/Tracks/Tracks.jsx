@@ -1,6 +1,5 @@
 import React from "react";
 import "./track.css";
-import Slide from "react-reveal/Slide";
 
 const Tracks = () => {
   const track_list = [

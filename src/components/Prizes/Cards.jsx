@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import LandingBackground from "../../assets/img/landingBg.png";
 const CardBox = styled.div`
   width: 100%;
   height: 100%;
@@ -10,8 +9,6 @@ const CardBox = styled.div`
   overflow: none;
   @media (max-width: 768px) {
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -43,15 +40,7 @@ const Heading = styled.h2`
 const Cards = () => {
   return (
     <>
-      <section
-        style={{
-          paddingTop: "20px",
-          marginTop: "0px",
-          backgroundImage: `url(${LandingBackground})`,
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-        }}
-      >
+      <section>
         <Heading>Winner Prizes</Heading>
         <CardBox>
           <CardContainer>
@@ -75,16 +64,7 @@ const Cards = () => {
         </CardBox>
       </section>
       {/* participation starts */}
-      <section
-        style={{
-          backgroundImage: `url(${LandingBackground})`,
-
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-          backgroundSize: "cover",
-        }}
-      >
+      <section>
         <Heading>Participation Prizes</Heading>
         <CardBox>
           <CardContainer>

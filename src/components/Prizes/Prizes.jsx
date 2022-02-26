@@ -169,6 +169,13 @@ const Heading = styled.h2`
   padding-top: 10px;
   color: #ffffff;
   text-shadow: 0px 0px 12px #9226ff;
+  font-size: 48px;
+  @media (max-width: 768px) {
+    font-size: 44px;
+  }
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 const P = styled.h6`
   text-align: center;
@@ -185,8 +192,8 @@ export default function Prizes() {
   return (
     <>
       <Heading>Prizes</Heading>
-      <P>Watch out to grab some really cool prizes!</P>
-      {/* <PrizeWrapper>
+      {/* <P>Watch out to grab some really cool prizes!</P> */}
+       <PrizeWrapper>
         <Holder>
           <img src={polypurple} id="purple" />
           <Ellipse1>
@@ -219,7 +226,7 @@ export default function Prizes() {
           </Ellipse3>
           <Prizetext />
         </Holder>
-      </PrizeWrapper> */}
+      </PrizeWrapper> 
     </>
   );
 }
