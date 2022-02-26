@@ -7,6 +7,7 @@ import Fibonalabs from "../../assets/sponsor-logos/General/Fibonalabs.png";
 import Hack_Club from "../../assets/sponsor-logos/General/Hack_Club.png";
 import MSLA from "../../assets/sponsor-logos/General/MSLA.png";
 import Wolfram from "../../assets/sponsor-logos/General/wolfram.png";
+import Matic from "../../assets/sponsor-logos/Gold/matic.png";
 import LandingBackground from "../../assets/img/landingBg.png";
 
 // copied
@@ -137,8 +138,8 @@ const Sponsors = () => {
       id="Sponsors"
     >
       <SponserTitle style={{ paddingTop: "100px" }}>Our Sponsers</SponserTitle>
-      {/* <Heading style={{ paddingTop: "100px" }}>Platinum Sponsors</Heading> */}
-      {/* <Wrapper>
+      <Heading style={{ paddingTop: "100px" }}>Platinum Sponsors</Heading>
+      <Wrapper>
         <a href="https://devfolio.co/" target="_blank" rel="noreferrer">
           <Logos src={Devfolio} />
         </a>
@@ -149,9 +150,12 @@ const Sponsors = () => {
         >
           <Logos src={Wolfram} />
         </a>
-      </Wrapper> */}
+        <a href="https://polygon.technology/" target="_blank" rel="noreferrer">
+          <Logos src={Matic} />
+        </a>
+      </Wrapper>
       <P style={{ paddingTop: "10px" }}>Special sponsers coming up here!</P>
-      {/* <MarqueeR />
+      <MarqueeR />
       <Heading style={{ paddingTop: "100px" }}>Community Sponsor</Heading>
       <Wrapper>
         <a
@@ -194,7 +198,7 @@ const Sponsors = () => {
             <SponserText className="sponserText">Sponsor Us</SponserText>
           </Sponbutton>
         </a>
-      </GlowWrapper> */}
+      </GlowWrapper>
     </div>
   );
 };
