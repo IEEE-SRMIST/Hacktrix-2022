@@ -30,7 +30,7 @@ const Logos = styled.img`
 const Wrapper = styled.main`
   width: 100%;
   margin: auto;
-  padding: 1em 0;
+  padding: 2em 0;
   /* background: #040309; */
   display: flex;
   justify-content: center;
@@ -58,36 +58,18 @@ const GlowWrapper = styled.main`
   }
 `;
 const Sponbutton = styled.button`
-  margin-top: 20px;
-
-  --glow-color: rgb(230, 204, 255);
-
-  --btn-color: rgb(100, 61, 136);
-  border: 0.25em solid var(--glow-color);
-  padding: 1em 2em;
-  color: var(--glow-color);
-  font-family: "Gothic A1", sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  background-color: var(--btn-color);
-  border-radius: 1em;
-  outline: none;
-  box-shadow: 0 0 1em 0.25em var(--glow-color),
-    0 0 4em 1em var(--glow-spread-color),
-    inset 0 0 0.75em 0.25em var(--glow-color);
-  text-shadow: 0 0 0.5em var(--glow-color);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 100;
   position: relative;
   transition: all 0.3s;
 
-  &::after {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--glow-spread-color);
+  &::hover {
     filter: blur(2em);
     opacity: 0.7;
     transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
@@ -122,13 +104,15 @@ const Heading = styled.h2`
 const P = styled.h6`
   display: flex;
   align-items: center;
-  color: #b741ff;
-  text-shadow: 0px 0px 50px #ffffff;
+  color: #ffffff;
+  text-shadow: 0px 0px 50px #b741ff;
   justify-content: center;
 `;
 
 const SponserText = styled.p`
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Bios", sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
 `;
 const Sponsors = () => {
   return (
@@ -150,20 +134,20 @@ const Sponsors = () => {
         <a href="https://devfolio.co/" target="_blank" rel="noreferrer">
           <Logos src={Devfolio} />
         </a>
-        <a
+        {/* <a
           href="https://www.wolfram.com/wolfram-one/"
           target="_blank"
           rel="noreferrer"
         >
           <Logos src={Wolfram} />
-        </a>
+        </a> */}
         <a href="https://polygon.technology/" target="_blank" rel="noreferrer">
           <Logos src={Matic} />
         </a>
       </Wrapper>
-      <P style={{ paddingTop: "10px" }}>Special sponsers coming up here!</P>
+
       <MarqueeR />
-      <Heading style={{ paddingTop: "100px" }}>Community Sponsor</Heading>
+      {/* <Heading style={{ paddingTop: "100px" }}>Community Sponsor</Heading>
       <Wrapper>
         <a
           href="https://studentambassadors.microsoft.com/"
@@ -172,9 +156,9 @@ const Sponsors = () => {
         >
           <Logos src={MSLA} />
         </a>
-      </Wrapper>
+      </Wrapper> */}
 
-      <Heading style={{ paddingTop: "100px" }}>Internship Partner</Heading>
+      {/* <Heading style={{ paddingTop: "100px" }}>Internship Partner</Heading>
       <Wrapper>
         <a
           href="https://www.fibonalabs.com/index.html"
@@ -183,21 +167,22 @@ const Sponsors = () => {
         >
           <Logos src={Fibonalabs} />
         </a>
-      </Wrapper>
+      </Wrapper> */}
 
-      <Heading style={{ paddingTop: "100px" }}>Goodies Sponsor</Heading>
+      {/* <Heading style={{ paddingTop: "100px" }}>Goodies Sponsor</Heading>
       <Wrapper>
         <a href="https://hackclub.com/brand/" target="_blank" rel="noreferrer">
           <Logos src={Hack_Club} />
         </a>
-      </Wrapper>
+      </Wrapper> */}
 
-      <Heading style={{ paddingTop: "100px" }}>Domain Sponsor</Heading>
+      {/* <Heading style={{ paddingTop: "100px" }}>Domain Sponsor</Heading>
       <Wrapper>
         <a href="https://www.dennetworks.com/" target="_blank" rel="noreferrer">
           <Logos src={Den} />
         </a>
-      </Wrapper>
+      </Wrapper> */}
+      <P style={{ paddingTop: "100px" }}>Special sponsers coming up here!</P>
       <GlowWrapper>
         <a href="mailto:ieee@srmist.edu.in" target="_blank" rel="noreferrer">
           {" "}

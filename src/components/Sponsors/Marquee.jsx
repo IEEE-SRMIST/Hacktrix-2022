@@ -52,7 +52,7 @@ const MarqueeR = () => {
         </Marquee>
       </MarqueeWrapper>
       {/* silver marquee */}
-      <Heading style={{ paddingTop: "100px" }}>Silver Sponsors</Heading>
+      {/* <Heading style={{ paddingTop: "100px" }}>Silver Sponsors</Heading>
       <MarqueeWrapper>
         <Marquee speed="90" pauseOnHover={true} gradient={false}>
           <div>
@@ -65,9 +65,9 @@ const MarqueeR = () => {
             })}
           </div>
         </Marquee>
-      </MarqueeWrapper>
+      </MarqueeWrapper> */}
       {/* Bronze sponsors */}
-      <Heading style={{ paddingTop: "100px" }}>Bronze Sponsors</Heading>
+      {/* <Heading style={{ paddingTop: "100px" }}>Bronze Sponsors</Heading>
       <MarqueeWrapper>
         <Marquee speed="90" pauseOnHover={true} gradient={false}>
           <div>
@@ -80,7 +80,7 @@ const MarqueeR = () => {
             })}
           </div>
         </Marquee>
-      </MarqueeWrapper>
+      </MarqueeWrapper> */}
       {/* end of bronze */}
     </>
   );
