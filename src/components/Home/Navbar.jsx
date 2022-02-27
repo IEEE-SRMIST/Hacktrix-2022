@@ -87,7 +87,7 @@ const LogoImage = styled.a`
   }
 `;
 
-const DevfolioImage = styled.a`
+const DevfolioImage = styled.div`
   padding-top: 10px;
   width: clamp(100px, 100%, 240px);
   img {
@@ -141,6 +141,8 @@ function Navbar() {
       </NavbarList>
       <DevfolioImage
         class="apply-button"
+        data-hackathon-slug="hacktrixtake2"
+        data-button-theme="light"
       >
         <img src={ApplyWithDevfolioBtn} alt="Apply With Devfolio" />
       </DevfolioImage>
