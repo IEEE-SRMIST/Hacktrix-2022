@@ -11,6 +11,7 @@ const CardBox = styled.div`
   overflow: none;
   column-gap: 1rem;
   font: inherit;
+  transition: 0.3s;
 
   @media (max-width: 768px) {
     display: flex;
@@ -22,15 +23,15 @@ const CardBox = styled.div`
 
 const Title = styled.h1`
   text-align: center;
-`
+`;
 
 const CardContainer = styled.div`
   width: clamp(200px, 100%, 300px);
   background: #12151b;
-  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5), inset 0px 2px 0px #8946A6;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5), inset 0px 2px 0px #8946a6;
   border-radius: 8px;
   margin: 50px auto;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   font: inherit;
   height: fit-content;
 
@@ -50,6 +51,7 @@ const Heading = styled.h2`
   text-shadow: 0px 0px 12px #9226ff;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
   justify-content: space-between;
   * {
     font: inherit;
@@ -67,49 +69,96 @@ const CardBodyList = styled.ul`
 
 const CardBodyItem = styled.li`
   font: inherit;
+  padding: 10px;
+  text-align: justify;
 `;
 
 const Card = ({ heading, body }) => {
   const [active, setActive] = useState(false);
 
-  return (<CardContainer>
-    <Heading
-      onClick={() => setActive(!active)}><span>{heading}</span> <span>{active ? '-' : '+'}</span></Heading>
-    <CardBody
-      style={{
-        display: active ? 'block' : 'none',
-      }}
-    >
-      <CardBodyList>
-        {
-          body.map((item, index) => (
+  return (
+    <CardContainer>
+      <Heading onClick={() => setActive(!active)}>
+        <span>{heading}</span> <span>{active ? "-" : "+"}</span>
+      </Heading>
+      <CardBody
+        style={{
+          display: active ? "block" : "none",
+          transition: active ? "0.3s" : "0",
+        }}
+      >
+        <CardBodyList>
+          {body.map((item, index) => (
             <CardBodyItem key={index}>{item}</CardBodyItem>
-          ))
-        }
-      </CardBodyList>
-    </CardBody>
-  </CardContainer>)
-}
-
+          ))}
+        </CardBodyList>
+      </CardBody>
+    </CardContainer>
+  );
+};
 
 const Cards = () => {
-
   const WINNER_PRIZES = [
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
+    {
+      heading: "Polygon",
+      body: [
+        "Cash prize for the best hack built on top of Ethereum (Rs.10000).",
+        "Teams that integrate Polygon in their hacks as well the prize money will be (Rs.15000)",
+        "Eligibility for Internship/Full-Time role.",
+        "Seed funding of upto 5000 USD.",
+      ],
+    },
+    {
+      heading: "Tezos",
+      body: [
+        "20000 INR for best Dapp built on Tezos.",
+        "Continuity grant opportunity up to 5,000 USD for an outstanding project.",
+        "Every valid submission made in the Tezos track will be rewarded with exclusive Schwag Kits.",
+      ],
+    },
+    {
+      heading: "Celo",
+      body: ["20000 INR for best Dapp built on Celo."],
+    },
+    // {
+    //   heading: "Filecoin",
+    //   body: ["20000 INR for best use of IPFS and/or Filecoin."],
+    // },
+    // {
+    //   heading: "Heading",
+    //   body: ["prize information", "prize information", "prize information"],
+    // },
+    // {
+    //   heading: "Heading",
+    //   body: ["prize information", "prize information", "prize information"],
+    // },
   ];
 
   const PARTICIPATION_PRIZES = [
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
-    { heading: 'Heading', body: ['prize information', 'prize information', 'prize information'] },
+    {
+      heading: "Heading",
+      body: ["prize information", "prize information", "prize information"],
+    },
+    {
+      heading: "Heading",
+      body: ["prize information", "prize information", "prize information"],
+    },
+    {
+      heading: "Heading",
+      body: ["prize information", "prize information", "prize information"],
+    },
+    {
+      heading: "Heading",
+      body: ["prize information", "prize information", "prize information"],
+    },
+    {
+      heading: "Heading",
+      body: ["prize information", "prize information", "prize information"],
+    },
+    {
+      heading: "Heading",
+      body: ["prize information", "prize information", "prize information"],
+    },
   ];
 
   return (
@@ -125,11 +174,9 @@ const Cards = () => {
       >
         <Title>Winner Prizes</Title>
         <CardBox>
-          {
-            WINNER_PRIZES.map((prize, index) => (
-              <Card {...prize} key={index} />
-            ))
-          }
+          {WINNER_PRIZES.map((prize, index) => (
+            <Card {...prize} key={index} />
+          ))}
         </CardBox>
       </section>
       {/* participation starts */}
@@ -143,14 +190,12 @@ const Cards = () => {
           backgroundSize: "cover",
         }}
       >
-        <Title>Participation Prizes</Title>
+        {/* <Title>Participation Prizes</Title>
         <CardBox>
-          {
-            PARTICIPATION_PRIZES.map((prize, index) => (
-              <Card {...prize} key={index} />
-            ))
-          }
-        </CardBox>
+          {PARTICIPATION_PRIZES.map((prize, index) => (
+            <Card {...prize} key={index} />
+          ))}
+        </CardBox> */}
       </section>
     </>
   );
