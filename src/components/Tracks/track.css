@@ -19,7 +19,6 @@
   font-weight: 800;
   text-decoration-color: 2px solid #deb7f5;
   text-shadow: 0px 0px 50px #b741ff;
-
 }
 
 .tracks {
@@ -31,7 +30,6 @@
   padding-top: 20px;
 }
 
-
 .track-img {
   height: 10rem;
   width: 10rem;
@@ -41,8 +39,6 @@
   bottom: 4rem;
   left: -0.5rem;
 }
-
-
 
 .item-title {
   min-height: 65px;
@@ -106,16 +102,15 @@
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 550px) {
-
   .track-title {
     font-size: 36px;
-  }  
+  }
   .track .container {
     padding: 20px;
   }
   .tracks-title {
-    font-size: 36px;
-  } 
+    font-size: 30px;
+  }
   .item-title {
     margin-top: 50px;
   }
