@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { GlitchedImage } from "react-image-glitch";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import LandingBackground from "../../assets/img/landingBg.png";
@@ -13,7 +12,7 @@ const Container = styled.div`
   transform: translate(-50%, -50%);
   > * {
     margin-top: 4em;
-    @media (max-width: 425px){
+    @media (max-width: 425px) {
       margin-top: 1em;
     }
   }

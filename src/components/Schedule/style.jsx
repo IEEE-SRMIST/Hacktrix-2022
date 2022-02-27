@@ -59,7 +59,7 @@ export const Heading = styled.div`
     font-family: Bios;
     font-style: normal;
     font-weight: normal;
-    font-size: 56px;
+    font-size: 48px;
     line-height: 64px;
     letter-spacing: 0.3em;
 
@@ -77,7 +77,7 @@ export const Heading = styled.div`
     @media (max-width:940px){
         margin-top: 7vh;
         margin-bottom: 7vh;
-        font-size: 48px;
+        font-size: 44px;
         line-height: 56px;
     }
     

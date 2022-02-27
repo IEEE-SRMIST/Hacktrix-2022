@@ -169,6 +169,13 @@ const Heading = styled.h2`
   padding-top: 10px;
   color: #ffffff;
   text-shadow: 0px 0px 12px #9226ff;
+  font-size: 48px;
+  @media (max-width: 768px) {
+    font-size: 44px;
+  }
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 const P = styled.h6`
   text-align: center;
@@ -190,7 +197,7 @@ export default function Prizes() {
         <Holder>
           <img src={polypurple} id="purple" />
           <Ellipse1>
-            <Prizetext>899</Prizetext>
+            <Prizetext>better</Prizetext>
             <EllipseP>
               <Prizetext>2</Prizetext>
             </EllipseP>
@@ -201,7 +208,7 @@ export default function Prizes() {
         <Goldholder>
           <img src={polygold} id="gold" />
           <Ellipse2>
-            <Prizetext>999</Prizetext>
+            <Prizetext>The best!</Prizetext>
             <EllipseG>
               <Prizetext>1</Prizetext>
             </EllipseG>
@@ -212,7 +219,7 @@ export default function Prizes() {
         <Holder>
           <img src={polyblue} id="blue" />
           <Ellipse3>
-            <Prizetext>799</Prizetext>
+            <Prizetext>A good one!</Prizetext>
             <EllipseB>
               <Prizetext>3</Prizetext>
             </EllipseB>
