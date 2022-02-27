@@ -7,7 +7,6 @@ const NavbarComponent = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   padding: 1em 1.5em;
   display: flex;
@@ -22,16 +21,18 @@ const NavbarComponent = styled.nav`
 const NavbarList = styled.ul`
   list-style: none;
   display: flex;
-  height: 60px;
+  height: 25px;
+  margin-bottom: -1rem;
   justify-content: space-evenly;
   gap: 2em;
   align-items: center;
   transition: all 500ms;
   font-size: 1.35rem;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 8px;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 30px;
   z-index: 100;
+  padding: 1.2em 1em;
 
   @media (max-width: 800px) {
     gap: 20px;
@@ -39,9 +40,10 @@ const NavbarList = styled.ul`
     position: fixed;
     bottom: 4rem;
     left: 50%;
+
     transform: translateX(-50%);
     height: 40px;
-    padding: 1em .25em;
+    padding: 1em 0.25em;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -53,19 +55,20 @@ const NavbarList = styled.ul`
   }
   @media (max-width: 425px) {
     gap: 10px;
+    font-size: 0.8rem;
   }
-`
+`;
 
 const NavbarItem = styled.li`
   @media (max-width: 800px) {
-    padding: 0 .5em;
+    padding: 0 0.5em;
   }
 `;
 
 const NavbarLink = styled.a`
   text-decoration: none;
   color: #d898ff;
-
+  font-family: "Bios";
   text-shadow: 0px 0px 24px #b741ff;
   :hover {
     color: #cb7efb;
@@ -85,6 +88,7 @@ const LogoImage = styled.a`
 `;
 
 const DevfolioImage = styled.a`
+  padding-top: 10px;
   width: clamp(100px, 100%, 240px);
   img {
     width: 100%;
@@ -112,6 +116,17 @@ function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  });
+
   return (
     <NavbarComponent>
       <LogoImage href="#Home">
@@ -124,7 +139,9 @@ function Navbar() {
           </NavbarItem>
         ))}
       </NavbarList>
-      <DevfolioImage href="#">
+      <DevfolioImage
+        class="apply-button"
+      >
         <img src={ApplyWithDevfolioBtn} alt="Apply With Devfolio" />
       </DevfolioImage>
     </NavbarComponent>

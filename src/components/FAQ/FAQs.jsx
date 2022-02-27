@@ -10,7 +10,6 @@ const FaqWrapper = styled.div`
   background-image: url(${FaqTop}), url(${FaqBottom});
   background-repeat: no-repeat;
   background-size: 540px;
-
   @media (max-width: 768px) {
     background-size: 280px, 200px;
   }
@@ -27,13 +26,19 @@ const FaqTitle = styled.div`
   font-family: Bios;
   font-style: normal;
   text-align: center;
-  font-size: 56px;
+  font-size: 48px;
   margin-bottom: 30px;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0px 0px 12px #b741ff;
   line-height: 64px;
   letter-spacing: 0.3em;
+  @media (max-width: 768px) {
+    font-size: 44px;
+  }
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 const Faqs = styled.div`
@@ -61,7 +66,6 @@ const Accordion = styled.div`
       line-height: 22px;
     }
   }
-
   button::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     @media (max-width: 768px) {

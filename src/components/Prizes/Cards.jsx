@@ -14,8 +14,6 @@ const CardBox = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;

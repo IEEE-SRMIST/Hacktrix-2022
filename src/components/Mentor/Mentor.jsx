@@ -64,13 +64,19 @@ const MENTOR = [
 
 const Heading = styled.h2`
   text-align: center;
-  font-size: 65px;
+  font-size: 48px;
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 50px;
   margin-top: 20px;
   font-weight: 800;
   text-decoration-color: 2px solid #deb7f5;
   text-shadow: 0px 0px 50px #b741ff;
+  @media (max-width: 768px) {
+    font-size: 44px;
+  }
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 const P = styled.h6`
@@ -87,7 +93,7 @@ const P = styled.h6`
 const Mentor = () => {
   return (
     <div class="myStyle" id="Mentor">
-      <Heading>Mentor</Heading>
+      <Heading>Mentors</Heading>
       <P>Coming up real soon.</P>
       <div className="row py-5 gx-0 justify-content-center">
         {MENTOR.map((item, index) => {

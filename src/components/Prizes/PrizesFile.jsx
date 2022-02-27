@@ -5,10 +5,13 @@ import LandingBackground from "../../assets/img/landingBg.png";
 const PrizesFile = () => {
   return (
     <div
-      style={{
-        backgroundPosition: "center",
-        paddingTop: "20px",
-      }}
+    style={{
+      backgroundImage: `url(${LandingBackground})`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundAttachment: "fixed",
+      backgroundSize: "cover",
+    }}
       id="Prizes"
     >
       <Prizes />

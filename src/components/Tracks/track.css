@@ -14,11 +14,12 @@
   text-align: center;
   margin-bottom: 100px;
   font-family: "Bios";
-  font-size: 65px;
+  font-size: 48px;
   color: rgba(255, 255, 255, 0.95);
   font-weight: 800;
   text-decoration-color: 2px solid #deb7f5;
   text-shadow: 0px 0px 50px #b741ff;
+
 }
 
 .tracks {
@@ -30,28 +31,18 @@
   padding-top: 20px;
 }
 
-.parent {
-  position: relative;
-  top: 0;
-  left: 0;
-  margin-top: 4rem;
-  margin-bottom: -200px;
-}
 
 .track-img {
   height: 10rem;
   width: 10rem;
   position: relative;
+  margin-bottom: 20px;
+  margin-top: 30px;
   bottom: 4rem;
   left: -0.5rem;
 }
 
-.frame-img {
-  position: absolute;
-  width: 350px;
-  top: -190px;
-  left: -20px;
-}
+
 
 .item-title {
   min-height: 65px;
@@ -60,8 +51,8 @@
 }
 
 .tracks-title {
-  font-size: 35px;
-  margin-top: 30px;
+  font-size: 30px;
+  margin-top: -12rem;
   margin-bottom: 15px;
   color: rgba(216, 152, 255, 1);
   text-shadow: 0px 0px 24px #fff;
@@ -80,6 +71,7 @@
 @media screen and (min-device-width: 550px) and (max-device-width: 710px) {
   .track-title {
     margin-bottom: 70px;
+    font-size: 44px;
   }
 
   .tracks {
@@ -113,14 +105,17 @@
   }
 }
 
-@media screen and (min-device-width: 360px) and (max-device-width: 550px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 550px) {
+
+  .track-title {
+    font-size: 36px;
+  }  
   .track .container {
     padding: 20px;
   }
-
   .tracks-title {
-    font-size: 24px;
-  }
+    font-size: 36px;
+  } 
   .item-title {
     margin-top: 50px;
   }
@@ -129,8 +124,7 @@
     height: 8rem;
     width: 8rem;
     position: relative;
-    bottom: 15rem;
-    left: 56rem;
+    bottom: 8rem;
     border: 1px solid #000000;
   }
 
