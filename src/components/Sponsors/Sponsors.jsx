@@ -7,7 +7,7 @@ import Fibonalabs from "../../assets/sponsor-logos/General/Fibonalabs.png";
 import Hack_Club from "../../assets/sponsor-logos/General/Hack_Club.png";
 import MSLA from "../../assets/sponsor-logos/General/MSLA.png";
 import Wolfram from "../../assets/sponsor-logos/General/wolfram.png";
-import Matic from "../../assets/sponsor-logos/Gold/matic.png";
+import Polygon from "../../assets/sponsor-logos/Gold/polygon.png";
 import LandingBackground from "../../assets/img/landingBg.png";
 
 // copied
@@ -142,7 +142,7 @@ const Sponsors = () => {
           <Logos src={Wolfram} />
         </a> */}
         <a href="https://polygon.technology/" target="_blank" rel="noreferrer">
-          <Logos src={Matic} />
+          <Logos src={Polygon} />
         </a>
       </Wrapper>
 

@@ -141,7 +141,7 @@ function Navbar() {
       </NavbarList>
       <DevfolioImage
         class="apply-button"
-        data-hackathon-slug="hacktrixtake2"
+        data-hackathon-slug="hacktrix"
         data-button-theme="light"
       ></DevfolioImage>
     </NavbarComponent>
