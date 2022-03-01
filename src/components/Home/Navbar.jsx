@@ -143,9 +143,7 @@ function Navbar() {
         class="apply-button"
         data-hackathon-slug="hacktrixtake2"
         data-button-theme="light"
-      >
-        <img src={ApplyWithDevfolioBtn} alt="Apply With Devfolio" />
-      </DevfolioImage>
+      ></DevfolioImage>
     </NavbarComponent>
   );
 }
