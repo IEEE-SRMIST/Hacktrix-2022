@@ -83,7 +83,7 @@ const LogoImage = styled.a`
     height: auto;
   }
   @media (max-width: 600px) {
-    width: clamp(60px, 100%, 120px);
+    width: 0px;
   }
 `;
 
@@ -139,11 +139,12 @@ function Navbar() {
           </NavbarItem>
         ))}
       </NavbarList>
-      <DevfolioImage
+
+      <div
         class="apply-button"
         data-hackathon-slug="hacktrixtake2"
         data-button-theme="light"
-      ></DevfolioImage>
+      ></div>
     </NavbarComponent>
   );
 }
