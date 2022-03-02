@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import IeeeLogo from "../../assets/img/ieeeLogo.png";
 import ApplyWithDevfolioBtn from "../../assets/img/applyDevfolioBtn.png";
+import "./Navbar.css";
 
 const NavbarComponent = styled.nav`
   position: fixed;
@@ -15,6 +16,9 @@ const NavbarComponent = styled.nav`
   z-index: 100;
   @media (max-width: 800px) {
     position: static;
+    border-bottom: 2px solid #b741ff;
+    border-radius: 30px;    
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   }
 `;
 
@@ -139,12 +143,13 @@ function Navbar() {
           </NavbarItem>
         ))}
       </NavbarList>
-
+      <div className="dev">
       <div
-        class="apply-button"
+        className="apply-button"
         data-hackathon-slug="hacktrixtake2"
-        data-button-theme="light"
+        data-button-theme="dark"
       ></div>
+      </div>
     </NavbarComponent>
   );
 }

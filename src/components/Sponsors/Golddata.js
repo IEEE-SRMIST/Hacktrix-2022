@@ -6,7 +6,7 @@ import Logo6 from "../../assets/sponsor-logos/Gold/Repl.it.png";
 import Logo7 from "../../assets/sponsor-logos/Gold/siic.png";
 import Logo8 from "../../assets/sponsor-logos/Gold/Tabnine.png";
 import Logo9 from "../../assets/sponsor-logos/Gold/tezos.png";
-import Logo10 from "../../assets/sponsor-logos/Gold/celo.png";
+import Logo10 from "../../assets/sponsor-logos/Gold/Celo.png";
 import Logo11 from "../../assets/sponsor-logos/Gold/filecoin.png";
 
 let gold = [
