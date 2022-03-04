@@ -1,157 +1,139 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
-import IeeeLogo from "../../assets/img/ieeeLogo.png";
-import ApplyWithDevfolioBtn from "../../assets/img/applyDevfolioBtn.png";
+import ieeeLogo from "../../assets/img/ieeeLogo.png";
 import "./Navbar.css";
 
 const NavbarComponent = styled.nav`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1em 1.5em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 100;
-  @media (max-width: 800px) {
-    position: static;
-    border-bottom: 2px solid #b741ff;
-    border-radius: 30px;    
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  }
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1em 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 100;
+	@media (max-width: 800px) {
+		/* border-bottom: 2px solid #b741ff; */
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		background-color: black;
+	}
+
+	@media (max-width: 600px) {
+		justify-content: center;
+	}
 `;
 
 const NavbarList = styled.ul`
-  list-style: none;
-  display: flex;
-  height: 25px;
-  margin-bottom: -1rem;
-  justify-content: space-evenly;
-  gap: 2em;
-  align-items: center;
-  transition: all 500ms;
-  font-size: 1.35rem;
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border-radius: 30px;
-  z-index: 100;
-  padding: 1.2em 1em;
+	list-style: none;
+	display: flex;
+	height: 25px;
+	margin-bottom: 0;
+	justify-content: space-evenly;
+	gap: 2em;
+	align-items: center;
+	transition: all 500ms;
+	font-size: 14pt;
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	border-radius: 30px;
+	z-index: 100;
+	padding: 1.2em 1em;
 
-  @media (max-width: 800px) {
-    gap: 20px;
-    justify-content: space-evenly;
-    position: fixed;
-    bottom: 4rem;
-    left: 50%;
+	@media (max-width: 800px) {
+		gap: 20px;
+		justify-content: space-evenly;
+		position: fixed;
+		bottom: 4rem;
+		left: 50%;
 
-    transform: translateX(-50%);
-    height: 40px;
-    padding: 1em 0.25em;
-    font-size: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    z-index: 100;
-  }
-  @media (max-width: 425px) {
-    gap: 10px;
-    font-size: 0.8rem;
-  }
+		transform: translateX(-50%);
+		height: 40px;
+		padding: 1em 0.25em;
+		font-size: 1rem;
+		background: rgba(255, 255, 255, 0.1);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border-radius: 8px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		z-index: 100;
+	}
+	@media (max-width: 425px) {
+		gap: 10px;
+		font-size: 0.8rem;
+	}
 `;
 
 const NavbarItem = styled.li`
-  @media (max-width: 800px) {
-    padding: 0 0.5em;
-  }
+	@media (max-width: 800px) {
+		padding: 0 0.5em;
+	}
 `;
 
 const NavbarLink = styled.a`
-  text-decoration: none;
-  color: #d898ff;
-  font-family: "Bios";
-  text-shadow: 0px 0px 24px #b741ff;
-  :hover {
-    color: #cb7efb;
-    text-shadow: 0px 0px 24px #ab24ff;
-  }
+	text-decoration: none;
+	color: #d898ff;
+	font-weight: 500;
+	text-shadow: 0px 0px 24px #b741ff;
+	:hover {
+		color: #cb7efb;
+		text-shadow: 0px 0px 24px #ab24ff;
+	}
 `;
 
 const LogoImage = styled.a`
-  width: clamp(80px, 100%, 160px);
-  img {
-    width: 100%;
-    height: auto;
-  }
-  @media (max-width: 600px) {
-    width: 0px;
-  }
-`;
-
-const DevfolioImage = styled.div`
-  padding-top: 10px;
-  width: clamp(100px, 100%, 240px);
-  img {
-    width: 100%;
-    height: auto;
-  }
-  @media (max-width: 600px) {
-    width: clamp(80px, 100%, 160px);
-  }
+	min-width: clamp(90px, 10%, 120px);
+	width: clamp(90px, 10%, 120px);
+	img {
+		width: 100%;
+		height: auto;
+	}
+	@media (max-width: 600px) {
+		display: none;
+	}
 `;
 
 function Navbar() {
-  const [offset, setOffset] = useState(0);
-  const navLinks = [
-    // { path: "#About", name: "HackTrix?" },
-    { path: "#tracks", name: "Tracks" },
-    { path: "#Sponsors", name: "Sponsors" },
-    { path: "#Prizes", name: "Prizes" },
-    { path: "#faqs", name: "FAQs" },
-  ];
+	const navLinks = [
+		// { path: "#About", name: "HackTrix?" },
+		{ path: "#tracks", name: "Tracks" },
+		{ path: "#sponsors", name: "Sponsors" },
+		{ path: "#prizes", name: "Prizes" },
+		{ path: "#faqs", name: "FAQs" },
+	];
 
-  useEffect(() => {
-    const onScroll = () => setOffset(window.pageYOffset);
-    window.removeEventListener("scroll", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+	useEffect(() => {
+		const script = document.createElement("script");
+		script.src = "https://apply.devfolio.co/v2/sdk.js";
+		script.async = true;
+		script.defer = true;
+		document.body.appendChild(script);
+		return () => {
+			document.body.removeChild(script);
+		};
+	}, []);
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  });
-
-  return (
-    <NavbarComponent>
-      <LogoImage href="#Home">
-        <img src={IeeeLogo} alt="IEEE Logo" />
-      </LogoImage>
-      <NavbarList>
-        {navLinks.map(({ path, name }) => (
-          <NavbarItem key={name}>
-            <NavbarLink href={`${path}`}>{name}</NavbarLink>
-          </NavbarItem>
-        ))}
-      </NavbarList>
-      <div className="dev">
-      <div
-        className="apply-button"
-        data-hackathon-slug="hacktrixtake2"
-        data-button-theme="dark"
-      ></div>
-      </div>
-    </NavbarComponent>
-  );
+	return (
+		<NavbarComponent>
+			<LogoImage href="https://www.ieeesrmist.in/" target="_blank">
+				<img src={ieeeLogo} alt="IEEE Logo" />
+			</LogoImage>
+			<NavbarList>
+				{navLinks.map(({ path, name }) => (
+					<NavbarItem key={name}>
+						<NavbarLink href={`${path}`}>{name}</NavbarLink>
+					</NavbarItem>
+				))}
+			</NavbarList>
+			<div
+				className="apply-button"
+				data-hackathon-slug="hacktrixtake2"
+				data-button-theme="light"
+				style={{ height: "44px", width: "312px" }}
+			></div>
+		</NavbarComponent>
+	);
 }
 
 export default Navbar;

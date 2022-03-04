@@ -5,18 +5,18 @@ import polygold from "../../assets/img/polygold.png";
 import polypurple from "../../assets/img/polypurple.png";
 
 const Ellipse3 = styled.div`
-  /* blue */
-  position: relative;
-  /* bottom:30%; */
-  width: 196px;
-  height: 196px;
-  margin: 0 auto;
-  background-color: #0c0e11;
-  border: 2px solid #0098fa;
-  border-radius: 50%;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 28px #0098fa;
-  /* @media (max-width: 768px) {
+	/* blue */
+	position: relative;
+	/* bottom:30%; */
+	width: 196px;
+	height: 196px;
+	margin: 0 auto;
+	background-color: #0c0e11;
+	border: 2px solid #0098fa;
+	border-radius: 50%;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 28px #0098fa;
+	/* @media (max-width: 768px) {
       display:flex;
       flex-direction:column;
       
@@ -24,68 +24,68 @@ const Ellipse3 = styled.div`
     } */
 `;
 const EllipseB = styled.div`
-  /* position: absolute; */
-  position: absolute;
-  top: 90%;
-  left: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  /* z-index: 1; */
-  margin: auto;
-  background-color: #0098fa;
-  border-radius: 50%;
-  /* @media (max-width: 768px) {
+	/* position: absolute; */
+	position: absolute;
+	top: 90%;
+	left: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	/* z-index: 1; */
+	margin: auto;
+	background-color: #0098fa;
+	border-radius: 50%;
+	/* @media (max-width: 768px) {
       height:5px;
       width:5px; 
     } */
 `;
 const EllipseG = styled.div`
-  position: absolute;
-  top: 90%;
-  left: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  /* z-index: 1; */
-  margin: auto;
-  background-color: #d7a31a;
-  border-radius: 50%;
+	position: absolute;
+	top: 90%;
+	left: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	/* z-index: 1; */
+	margin: auto;
+	background-color: #d7a31a;
+	border-radius: 50%;
 `;
 const EllipseP = styled.div`
-  /* position: absolute; */
+	/* position: absolute; */
 
-  position: absolute;
-  top: 90%;
-  left: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  /* z-index: 1; */
-  margin: auto;
-  background-color: #9a2ed1;
-  border-radius: 50%;
+	position: absolute;
+	top: 90%;
+	left: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	/* z-index: 1; */
+	margin: auto;
+	background-color: #9a2ed1;
+	border-radius: 50%;
 `;
 const Ellipse2 = styled.div`
-  /* Ellipse 2 */
-  /* Gold */
-  position: relative;
-  /* bottom:30%; */
-  width: 196px;
-  height: 196px;
-  margin: 0 auto;
-  background-color: #0c0e11;
-  border: 2px solid #d7a31a;
-  border-radius: 50%;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 28px #d7a31a;
-  /* @media (max-width: 768px) {
+	/* Ellipse 2 */
+	/* Gold */
+	position: relative;
+	/* bottom:30%; */
+	width: 196px;
+	height: 196px;
+	margin: 0 auto;
+	background-color: #0c0e11;
+	border: 2px solid #d7a31a;
+	border-radius: 50%;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 28px #d7a31a;
+	/* @media (max-width: 768px) {
       display:flex;
       align-items:center;
       justify-content:center;
@@ -93,18 +93,18 @@ const Ellipse2 = styled.div`
 `;
 
 const Ellipse1 = styled.div`
-  /* purple */
-  position: relative;
-  /* bottom:30%; */
-  width: 196px;
-  height: 196px;
-  margin: 0 auto;
-  background-color: #0c0e11;
-  border: 2px solid #9a2ed1;
-  border-radius: 50%;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 28px #9a2ed1;
-  /* @media (max-width: 768px) {
+	/* purple */
+	position: relative;
+	/* bottom:30%; */
+	width: 196px;
+	height: 196px;
+	margin: 0 auto;
+	background-color: #0c0e11;
+	border: 2px solid #9a2ed1;
+	border-radius: 50%;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 28px #9a2ed1;
+	/* @media (max-width: 768px) {
       display:flex;
       align-items:center;
       justify-content:center;
@@ -112,41 +112,41 @@ const Ellipse1 = styled.div`
     } */
 `;
 const Prizetext = styled.div`
-  display: flex;
-  margin: 80px;
-  /* z-index: 9; */
-  color: #ffffff;
-  @media (max-width: 768px) {
-    font-size: 20px;
-  }
+	display: flex;
+	margin: 80px;
+	/* z-index: 9; */
+	color: #ffffff;
+	@media (max-width: 768px) {
+		font-size: 20px;
+	}
 `;
 const PrizeWrapper = styled.main`
-  width: 60%;
-  height: 100%;
-  margin: 5px auto;
-  padding: 30px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* grid-auto-rows: minmax(100px, auto);
+	width: 60%;
+	height: 100%;
+	margin: 5px auto;
+	padding: 30px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/* grid-auto-rows: minmax(100px, auto);
   grid-auto-columns: minmax(100px, auto); */
-  justify-content: center;
-  overflow: none;
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+	justify-content: center;
+	overflow: none;
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 `;
 
 const Holder = styled.div`
-  /* margin:auto; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 20px;
-  /* @media (max-width: 768px) {
+	/* margin:auto; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 20px;
+	/* @media (max-width: 768px) {
       display:flex;
       align-items:center;
       justify-content:center;
@@ -154,46 +154,29 @@ const Holder = styled.div`
     } */
 `;
 const Goldholder = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 20px;
-  padding-bottom: 100px;
-  @media (max-width: 768px) {
-    padding-bottom: 0;
-  }
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 20px;
+	padding-bottom: 100px;
+	@media (max-width: 768px) {
+		padding-bottom: 0;
+	}
 `;
-const Heading = styled.h2`
-  text-align: center;
-  padding-top: 10px;
-  color: #ffffff;
-  text-shadow: 0px 0px 12px #9226ff;
-  font-size: 48px;
-  @media (max-width: 768px) {
-    font-size: 44px;
-  }
-  @media (max-width: 768px) {
-    font-size: 36px;
-  }
-`;
-const P = styled.h6`
-  text-align: center;
-  font-size: 25px;
-  color: #b741ff;
-  margin-bottom: 50px;
-  margin-top: 20px;
-  font-weight: 800;
-  text-decoration-color: 2px solid #deb7f5;
-  text-shadow: 0px 0px 50px #b741ff;
+const Message = styled.p`
+	text-align: center;
+	font-size: 16pt;
+	font-weight: 500;
+	color: ${({ theme }) => theme.text};
+	margin: 20px 0 50px 0;
 `;
 
 export default function Prizes() {
-  return (
-    <>
-      <Heading>Prizes</Heading>
-      <P>Watch out to grab some really cool prizes!</P>
-      {/* <PrizeWrapper>
+	return (
+		<>
+			<Message>Watch out to grab some really cool prizes!</Message>
+			{/* <PrizeWrapper>
         <Holder>
           <img src={polypurple} id="purple" />
           <Ellipse1>
@@ -227,6 +210,6 @@ export default function Prizes() {
           <Prizetext />
         </Holder>
       </PrizeWrapper> */}
-    </>
-  );
+		</>
+	);
 }

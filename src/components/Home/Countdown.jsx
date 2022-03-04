@@ -1,116 +1,104 @@
-import React from "react";
 import styled from "styled-components";
 import Timer from "react-countdown";
+import { COUNTDOWN_TIMERS } from "../../config";
 
 const Container = styled.div`
-  width: 100%;
-  font-family: "Bios";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5em 1em;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  text-transform: uppercase;
-  gap: 1em;
-  border-radius: 8px;
-  @media (max-width: 800px) {
-    font-size: 12px;
-    display: block;
-  }
+	width: 100%;
+	padding: 0.5rem 1.5rem;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 0.25rem;
+	backdrop-filter: blur(4px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	font-size: 14pt;
+	white-space: nowrap;
 
-  * {
-    font-family: "Bios";
-  }
-`;
+	article {
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		grid-gap: 1rem;
+		font-size: 24pt;
 
-const EventDate = styled.div`
-  width: 20ch;
-  @media (max-width: 800px) {
-    width: 100%;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-  @media (max-width: 425px) {
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-  }
-`;
+		div {
+			font-weight: 500;
 
-const CountdownOver = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75em;
-  font-size: 2rem;
-`;
+			span {
+				margin-left: 0.25rem;
+				font-weight: 400;
+				font-size: 10pt;
+				vertical-align: text-top;
+			}
+		}
+	}
 
-const TimeLeft = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75em;
-`;
+	@media screen and (max-width: 650px) {
+		flex-direction: column;
+		background: none;
+		border: none;
+		backdrop-filter: none;
 
-const Time = styled.span`
-  font-size: 1.6em;
-  padding: 0;
-  span {
-    font-size: 0.8rem;
-    vertical-align: text-top;
-  }
-  @media (max-width: 425px) {
-    font-size: 1em;
-    span{
-      font-size: 0.4rem;
-    }
-  }
+		.title {
+			padding-bottom: 1rem;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		}
+
+		article {
+			font-size: 32pt;
+
+			@media screen and (max-width: 480px) {
+				font-size: 24pt;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1rem 4rem;
+
+				div {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+	}
 `;
 
 // Renderer callback with condition
-const renderer = ({ days, hours, minutes, seconds, completed }) => {
-  if (completed) {
-    // Render a completed state
-    return <CountdownOver>Let the Game Begin!</CountdownOver>;
-  } else {
-    // Render a countdown
-    return (
-      <TimeLeft>
-        <Time>
-          {days}
-          <span>days</span>
-        </Time>
-        <Time>
-          {hours}
-          <span>hours</span>
-        </Time>
-        <Time>
-          {minutes}
-          <span>minutes</span>
-        </Time>
-        <Time>
-          {seconds}
-          <span>seconds</span>
-        </Time>
-      </TimeLeft>
-    );
-  }
+const renderer = ({ days, hours, minutes, seconds }) => {
+	return (
+		<article>
+			<div>
+				{days}
+				<span>DAYS</span>
+			</div>
+			<div>
+				{hours}
+				<span>HOURS</span>
+			</div>
+			<div>
+				{minutes}
+				<span>MINS</span>
+			</div>
+			<div>
+				{seconds}
+				<span>SECS</span>
+			</div>
+		</article>
+	);
 };
 
-function Countdown() {
-  const endCountdown = new Date("2022-04-01");
-  return (
-    <Container>
-      <EventDate>Prepare to Rumble:</EventDate>
-      <Timer date={endCountdown} renderer={renderer} />
-    </Container>
-  );
-}
+const Countdown = () => {
+	const counter =
+		COUNTDOWN_TIMERS.find((timer) => timer.timestamp - Date.now() > 0) ??
+		COUNTDOWN_TIMERS[COUNTDOWN_TIMERS.length - 1];
+
+	return (
+		<Container>
+			<div className="title">{counter.title}:</div>
+			<Timer date={counter.timestamp} renderer={renderer} />
+		</Container>
+	);
+};
 
 export default Countdown;

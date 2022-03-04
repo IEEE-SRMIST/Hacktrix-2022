@@ -1,45 +1,33 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
 import Hero from "./Hero";
-import LandingBackground from "../../assets/img/landingBg.png";
 import Countdown from "./Countdown";
 
-const Container = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  > * {
-    margin-top: 4em;
-    @media (max-width: 425px) {
-      margin-top: 1em;
-    }
-  }
+const Container = styled.section`
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+
+	> div {
+		max-width: 512px;
+		margin-bottom: 1rem;
+		min-width: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 `;
 
 const Landing = () => {
-  return (
-    <div
-      style={{
-        backgroundImage: `url(${LandingBackground})`,
-        height: "100vh",
-        width: "100%",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        backgroundSize: "cover",
-        position: "relative",
-      }}
-      id="Home"
-    >
-      <Navbar />
-      <Container>
-        <Hero />
-        <Countdown />
-      </Container>
-    </div>
-  );
+	return (
+		<Container>
+			<div>
+				<Hero />
+				<Countdown />
+			</div>
+		</Container>
+	);
 };
 
 export default Landing;

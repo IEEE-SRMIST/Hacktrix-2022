@@ -1,62 +1,61 @@
 .footer {
-  background-color: black;
-  text-align: center;
+	text-align: center;
 }
 
 .made {
-  color: #fff;
-  text-shadow: 0px 0px 50px #b741ff;
-  font-family: "Bios";
+	color: #fff;
+	text-shadow: 0px 0px 50px #b741ff;
+	font-family: "Bios";
 }
 
 .footer .container {
-  border-top: 1px solid rgba(255, 255, 255, 0.95);
-  padding: 20px 20px 0 20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.95);
+	padding: 20px 20px 0 20px;
 }
 
 .end-list {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .footer-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
 }
 
 .footer-item {
-  padding: 10px;
-  text-decoration: none;
+	padding: 10px;
+	text-decoration: none;
 }
 
 .footer-links {
-  padding: 3px;
-  text-decoration: none;
-  color: #fff;
-  text-shadow: 0px 0px 50px #b741ff;
-  font-family: "Bios";
+	padding: 3px;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0px 0px 50px #b741ff;
+	font-family: "Bios";
 }
 
 .links {
-  text-decoration: none;
-  color: #fff;
-  font-size: x-small;
-  font-family: "Bios";
+	text-decoration: none;
+	color: #fff;
+	font-size: x-small;
+	font-family: "Bios";
 }
 
 @media (max-width: 786px) {
-  .end-list {
-    justify-content: center;
-  }
-  .footer {
-    padding-bottom: 90px;
-  }
+	.end-list {
+		justify-content: center;
+	}
+	.footer {
+		padding-bottom: 90px;
+	}
 }
 
 @media (max-width: 360px) {
-  .footer {
-    padding-bottom: 70px;
-  }
+	.footer {
+		padding-bottom: 70px;
+	}
 }
