@@ -121,6 +121,8 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	button{
+		all: unset;
+		cursor: pointer;
 		transition: filter 200ms linear;
 
 		&:hover{
