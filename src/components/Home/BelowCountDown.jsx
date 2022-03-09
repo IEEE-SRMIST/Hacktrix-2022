@@ -5,7 +5,6 @@ import styled from 'styled-components';
 const Atag = styled.a`
   text-decoration: none;
   margin-top: 10px;
-  color: white;
   font-weight: 500;
   font-size: 16px;
 `;
@@ -16,16 +15,13 @@ const Button = styled.button`
   display: block;
   width: fit-content;
   margin: 10px auto;
-  font-size: 14pt;
+  font-size: 16pt;
   font-weight: 500;
   text-decoration: none;
+  padding: 0.75rem 1.25rem;
   border-radius: 0.5rem;
-  background-color: ${({ theme }) => theme.lightPink};
-  transition: all 200ms ease;
-  text-shadow: 0 0 12px ${({ theme }) => theme.glowPink};
-  border: 3px solid ${({ theme }) => theme.lightPink};
-  box-shadow: 0 0 12px ${({ theme }) => theme.glowPink},
-    inset 0 0 12px ${({ theme }) => theme.glowPink};
+  background-color: #5661ec;
+  border: none;
 `;
 const Span = styled.span`
   color: white;
