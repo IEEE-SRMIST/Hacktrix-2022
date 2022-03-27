@@ -1,3 +1,4 @@
+
 export const COUNTDOWN_TIMERS = [
 	{
 		title: "Registration ends in",
@@ -112,6 +113,34 @@ export const JUDGES = [
 ];
 
 export const MENTOR = [
+	{
+		name: "Ahmed Mawia",
+		image: "/img/mentor/ahmed.jpeg",
+		designation: "Mentor",
+		company: "IEEE SRMIST SB Web Dev Domain",
+		link: "https://www.linkedin.com/in/maw1a/",
+	  },
+	  {
+		name: "Shaurya Bhandari",
+		image: "/img/mentor/shaurya.jpeg",
+		designation: "Mentor",
+		company: "IEEE SRMIST SB Web Dev Domain",
+		link: "https://www.linkedin.com/in/shauryabhandari/",
+	  },
+	  {
+		name: "Kaustav Mohanty",
+		image: "/img/mentor/Kaustav.jpg",
+		designation: "Mentor",
+		//company: "",
+		//link: "",
+	  },
+	  {
+		name: "Shivam",
+		image: "/img/mentor/shivam.jpeg",
+		designation: "Mentor",
+		//company: "",
+		//link: "",
+	  },
 	// {
 	// 	name: "Steve Wozniak",
 	// 	image: "./img/speaker/judge1.svg",

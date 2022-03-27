@@ -22,23 +22,29 @@ const People = ({ title, data }) => {
 			{data.length === 0 ? (
 				<P>Coming up real soon.</P>
 			) : (
-				data.map((item, index) => {
+				<div className="row py-5 justify-content-center">
+				{data.map((item, index) => {
 					return (
-						<div key={index} className="col-12 col-lg-3 mb-15 speaker">
-							<div className="speakers">
-								<div className="speaker-img">
-									<img src={`${item.image}`} alt={`${item.name}`} />
-								</div>
-								<div className="speaker-details ">
-									<div className="speaker-name">{item.name}</div>
-									<div className="speaker-desg">
-										{item.designation}, {item.company}
-									</div>
-								</div>
+						
+						<div key={index} className="col-12 col-lg-4 mb-5 speaker">
+							<div className=" speakers">
+							    <a href={item.link} target="_blank">
+								    <div className="speaker-img ">
+								    	<img src={`${item.image}`} alt={`${item.name}`} />
+								    </div>
+								    <div className="speaker-details ">
+									    <div className="speaker-name">{item.name}</div>
+									    <div className="speaker-desg">
+									    	{item.designation}, {item.company}
+									    </div>
+								    </div>
+							    </a>
 							</div>
 						</div>
+						
 					);
-				})
+				})}
+				</div>
 			)}
 		</PeopleSection>
 	);

@@ -26,15 +26,11 @@
 
 .speaker-img {
   transition: background-color 0.2s ease;
-  height: 50px;
-
-  padding: 10px;
-  width: auto;
 }
 
 .speaker img {
-  height: 70%;
-  width: 70%;
+ height: 100%;
+ width: 100%;
   object-fit: contain;
 }
 
@@ -43,15 +39,12 @@
 }
 
 .speaker-img img {
-  height: 70%;
-  left: -17.27%;
-  right: -3.94%;
-  top: -3.59%;
-  bottom: 29.61%;
+  height: 200px;
+  margin-bottom: 25px;
 }
 
 .speaker_div .container {
-  padding: 80px;
+  padding: 60px;
 }
 
 .speaker-title {
@@ -64,9 +57,11 @@
 .speakers {
   min-width: 200px;
 }
+.speakers a{
+  text-decoration: none;
+}
 .speaker-details {
   color: white;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
